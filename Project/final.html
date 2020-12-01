@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+
+<head>
+    <title>Final Project Submission</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src='./final.js'></script>
+</head>
+
+<body>
+    <h1>COMP 6774 Final Project</h1>
+    <p><b>Submitted by:</b> Sumayyah Musa (sbmusa)</p>
+
+    <h2>Attribution</h2>
+    <p>
+
+    </p>
+
+    <h2>Problem Description and Objectives</h2>
+    <h3>Problem</h3>
+    <ul>
+        <li><b>Broad goal:</b> Provide visualizations to show how successful the U.S.A. has been in responding to the COVID-19 pandemic as compared to some other countries.</li>
+        <li><b>Sub-goal:</b></li>
+        <ol>
+            <li>Compare how the number of confirmed COVID-19 cases and deaths relates to the Government Response Stringency Index over time.</li>
+            <li>Show if increasingly strict measures affect the rate of infection in each of the six countries.</li>
+        </ol>
+    </ul>
+
+    <h3>Materials</h3>
+    <ul>
+        <li><b>Dataset:</b> The complete
+            <a href="https://covid.ourworldindata.org/data/owid-covid-data.csv"><i>COVID-19 dataset</i></a> used in this project is a collection of daily,
+            <a href="https://github.com/owid/covid-19-data/tree/master/public/data"> country-based covid-19 data</a> maintained by <a href="https://ourworldindata.org/coronavirus"><i>Our World in Data</i></a>. It includes up-to-date data on confirmed
+            cases, deaths, hospitalizations, and testing, as well as other variables of potential interest like stringency index, human development index, population, etc. It contains 50 columns and 58470 rows.
+        </li>
+        <li>
+            <b>Code libraries:</b> Some of the code libraries used were
+            <ul>
+                <li><a href="https://pandas.pydata.org/docs/getting_started/index.html">Pandas</a>, a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language, was used for cleaning,
+                    reducing and filtering the covid-19 data.
+                </li>
+                <li><a href="https://plotly.com/javascript/">Plotly.js</a>, a high-level, declarative charting library used for creating various statistical graphs, charts, including 3D charts and SVG maps, was used to create two of the data visualization
+                    charts.
+                </li>
+                <li>
+                    <a href="https://d3js.org/">D3.js</a>, a javascript library that helps bring data to life by combining powerful visualization components, was also used in creating one out of the three data visualizations.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Methods and Design</h2>
+    <h3><b>Data</b></h3>
+    <ul>
+        <li><b>Data Wrangling:</b> The dataset was preprocessed using Pandas in
+            <a href="https://jupyter.org/">Jupyter Notebook</a>, an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The
+            <a href="https://en.wikipedia.org/wiki/Data_pre-processing#:~:text=Data%20preprocessing%20includes%20cleaning%2C%20Instance,data%20processing%20can%20be%20interpreted.">data prepocessing</a> involved the following:
+            <ul>
+                <li> detecting, removal and filling of missing values in the records, although all missing values couldn't be removed as they may indicate that there were no covid cases/deaths/tests for that day. Some of the missing values were replaced with
+                    zero for better analysis;</li>
+                <li>dropping of features or variables (columns) that didn't contain any records and were not needed for visualization;</li>
+                <li>grouping and sorting the countries by their
+                    <a href="http://hdr.undp.org/en/content/human-development-index-hdi">human development index (HDI)</a>, and selecting 9 other countries around the United States' HDI, for easier comparison based on their similar capacity to respond
+                    to the pandemic;</li>
+                <li>adding a new column called
+                    <a href="https://en.wikipedia.org/wiki/Infection_rate">infection rate</a>, to determine the frequency of occurrence of new covid cases for particular days. The percentage was calculated by dividing the number of cases by population,
+                    and multipplying by 100, for a particular day.
+                </li>
+                <li>exporting the
+                    <a href="covid-data.csv">cleaned and preprocessed data</a>, which now contains 37 columns and 3132 rows, into <a href="https://en.wikipedia.org/wiki/Comma-separated_values">csv</a> format for use in Plotly.js and D3.js.</li>
+            </ul>
+            The preprocessing jupyter notebook was converted to HTML file for easy access and it can be viewed
+            <a href="covid-data-wrangling.html">here</a>
+        </li>
+
+        <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> of countries and their respective up to date covid-19 statistics.
+        <ul>
+            <li>
+                Iso_code:
+                <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> alpha-3 – three-letter country codes
+                <ul>
+                    <li><b>What:</b> Categorical</li>
+                </ul>
+            </li>
+            <li>
+                Continent: Continent of the geographical location/country
+                <ul>
+                    <li><b>What:</b> Categorical</li>
+                </ul>
+            </li>
+            <li>
+                Location: Full names of country/geographical location
+                <ul>
+                    <li><b>What:</b> Categorical</li>
+                </ul>
+            </li>
+            <li>
+                Date: Date of observation
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Total_cases: Total confirmed cases of COVID-19
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_cases: New confirmed cases of COVID-19
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_cases_smoothed: New confirmed cases of COVID-19(7-day rolling averages)
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Total_deaths: Total deaths attributed to covid-19
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_deaths: New deaths attributed to covid-19
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_deaths_smoothed: New deaths attributed to covid-19 (7-day rolling averages)
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Total_cases_per_million: Total confirmed cases of COVID-19 per 1,000,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_cases_per_million: New confirmed cases of COVID-19 per 1,000,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_cases_smoothed_per_million: Total confirmed cases of COVID-19 per 1,000,000 people (7-day rolling averages)
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Total_deaths_per_million: Total deaths attributed to COVID-19 per 1,000,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_deaths_per_million: New deaths attributed to COVID-19 per 1,000,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                New_deaths_smoothed_per_million: New deaths attributed to COVID-19 (7-day rolling averages) per 1,000,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Reproduction_rate: Real-time estimate of the effective reproduction rate (R) of covid-19, which is a way of rating coronavirus or any disease's ability to spread, or the number of people that one infected person will pass on a virus to, on average.
+                <ul>
+                    <li><b>What:</b> Ordinal</li>
+                </ul>
+            </li>
+            <li>
+                Total_tests: Total tests for covid-19
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Total_tests_per_thousand: Total tests for covid-19 per 1,000 people
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Tests_per_case: Tests conducted per new confirmed case of COVID-19, given as a rolling 7-day average (this is the inverse of positive_rate)
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Positive_rate: The share of COVID-19 tests that are positive, given as a rolling 7-day average (this is the inverse of tests_per_case)
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Test_units: Units used by the location to report its testing data
+                <ul>
+                    <li><b>What:</b> Categorical</li>
+                </ul>
+            </li>
+            <li>
+                Stringency_index: Government Response Stringency Index - a composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)
+                <ul>
+                    <li><b>What:</b> Ordinal</li>
+                </ul>
+            </li>
+            <li>
+                Population: Population of each country in 2020
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Life_expectancy: life expectancy at birth in 2019
+                <ul>
+                    <li><b>What:</b> Quantitative</li>
+                </ul>
+            </li>
+            <li>
+                Human_development_index: Summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and have a decent standard of living
+                <ul>
+                    <li><b>What:</b> Ordinal</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+    <h3><b>Why Analysis</b></h3>
+    <p>The stated goal is to compare the success and effectiveness of USA's response to covid-19 pandemic with 9 other countries. Here is the action/target pairs identified:</p>
+    <ul>
+        <li>Analysis level: action/target is <b>discover features</b>. </li>
+    </ul>
+
+    <h2>Design</h2>
+    <div id="myDiv" style="width:80%; height:100%"></div>
+    <script type='text/javascript' src='final.js'></script>
+
+    <h2>Visualization 2</h2>
+    <div id="myDiv2" style="width:80%; height:100%"></div>
+    <script type='text/javascript' src='final.js'></script>
+</body>
+
+</html>>Visualization 2</h2>
+<div id="myDiv2" style="width:80%; height:100%"></div>
+<script type='text/javascript' src='final.js'></script>
+</body>
+
+</html>

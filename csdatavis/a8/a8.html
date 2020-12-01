@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 8</title>
+    </head>
+
+    <body>
+        <h1>Assignment 8 Submission</h1>
+        <strong>NAME: </strong> SUMAYYAH MUSA<br>
+        <strong>COURSE: </strong>COMP 6774<br> 
+        <h2>Attributions</h2>
+        <p>I attest that this webpage, which contains WHAT, WHY and HOW analysis examining the Canadian federal election data set, with particular reference to the Candidates.csv and Results.csv data files, was solely my work, using some of the class texts and Tamara Munzner's book of Visualization Design.</p>
+        
+        <h2>Solution</h2>
+        <h1>Data</h1>
+        <h2>Dataset types</h2>
+        <ul>
+            <li>Candidates.csv - Tables</li>
+            <li>Results.csv - Tables</li>
+        </ul>
+
+        <h2>Summary and What categorization</h2>
+        <h2><b>Candidates.csv:</h2></b>
+        <p>election_id : An identifying column comprised of "GE" (for "General Election"), the election number, and the year in which the election occurred.</p>
+        <p>What : Ordered and Ordinal</p>
+        <p>Ballot Sequence Number : An identifying column for candidates</p>
+        <p>What : Categorical </p>
+        <p>Candidate_candidat : The Full name of Candidate </p>
+        <p>What :Categorical </p>
+        <p>candidate_province_english_anglais : The province in which the candidate resides.</p>
+        <p>What :Categorical</p>
+        <p>party_abbreviation_english_anglais : An abbreviation or short name of a political party, for ease in typing syntax.</p>
+        <p>What : Categorical</p>
+
+        <h2><b>Results.csv:</h2></b>
+        <p>election_id : An identifying column comprised of "GE" (for "General Election"), the election number, and the year in which the election occurred.</p>
+        <p>What : Ordered and Ordinal</p>
+        <p>ballot_sequence_number : An identifying column for candidates. At each election, in each riding, a candidate is identified by a unique number. This number represents the position of the candidate when listed alphabetically by surname.</p>
+        <p>What : Categorical, Ordered</p>
+        <p>candidate_poll_votes_count_votes_du_candidat_pour_le_bureau : The number of votes received by the candidate at this polling station in this election.</p>
+        <p>What :Quantitative</p>
+
+
+        <H2>Why categorization</H2>
+        <P>The stated goal directs us to how the popular vote in each province compares to the representation in Federal Parliament, for the top four federal political parties.
+        It may be worthwhile to suggest a more detailed interpretation of this goal, but based on this general objective only, here is the action/target pairs identified per the Why methodology:</P>
+        <ul>
+        <li>Analysis level: action/target is "discover trends". With the bar plot of the distribution of votes in each province, we are trying to uncover the voting pattern</li>
+        <li>Search level: action/target is "lookup similarity".</li>
+        <li>Query level: action/target is "compare distribution".</li>
+        </ul>
+
+
+        <h1>How Analysis</h1>
+        <h2>Illustration</h2>
+        <p><img src="Rplot.png"></p>
+        <h2>Description</h2>
+        <p>This bar plot shows the total number of votes for each province. Each of the riding (bar) is represented with the same colour, the dark bars are overlapping columns for two province located side-by-side.</p>
+        <h2>Idiom</h2>
+        <p>The Standard Bar Chart Idiom was used. It presents counts of categorical data items with bars, whose length encodes the votes. In another word, it presents a two-dimensional data, where the key attribute is categorical and the other attribute is quantitative.</p>
+        <h2>Marks and Channels</h2>
+        <p>The <i>how encoding</i> uses the arrange method category <i>express value</i> to <i>arrange</i> lines on the x axis, the channels being vertical position. The line mark conveys length depicting the number of votes. This is the most suitable way to represent the visualisation design for <b>effectiveness</b>.</p>
+        <p>The horizontal bars are not spaced and insome cases overlapped, this is due to the large datasets (observations). Also, not all riding (bars of each province) are showing, due to the same reason. This is a limiting factor for <b>expressiveness</b>.</p>
+        <h2>Rules of thumb</h2>
+        <p>I can connect my barplot representation to the "No justified 3D". Many people have the intuition that if two dimensions (2D) are good, three dimensions (3D) must be better--after all, we live in a 3D world. However, there are difficulties in visually encoding information with the third spatial dimension, depth, which has important differences from the two planar dimensions. This is also because detailed comparison better represented in 2D.</p>
+    </body>
+</html>

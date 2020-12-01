@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Sbmusa Course Secured Area"
+AuthUserFile /users/labnet3/gr2/sbmusa/.www/csdatavis/.htpasswd
+Require valid-user

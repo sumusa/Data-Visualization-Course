@@ -1,0 +1,239 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Covid data for Canada</title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+    <script src="https://binaworks.github.io/scripts/d3-container.v0.0.1.min.js"></script>
+    <style type="text/css">
+
+        path:hover {
+          fill: orange;
+        }
+      </style>
+
+<body onload="readandpivot()">
+<h1>ASSIGNMENT 6</h1>
+<strong>NAME :</strong>
+SUMAYYAH MUSA
+
+<br>
+<strong>Course :</strong>
+COMP 6774
+<br> 
+<h2>This is my submission for Assignment 6</h2>
+<h2>Attribution</h2>
+<P>
+  I attest that this solution is of my own independent Job 
+</P>
+<div>
+
+</div>
+<div id="my_dataviz"></div>
+
+<script>
+     var width = 960
+        var height = 600
+        var svg1 = d3.select("div").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+    var projection = d3.geoOrthographic().clipAngle(90).rotate([98, -60]).scale(600).translate([200,200])
+    .scale(700)
+    .translate([width / 2, height / 2]);
+
+    var path = d3.geoPath().projection(projection);
+
+    var g = svg1.append("g");
+
+    d3.json("canada.json")
+    .then(function (jsonData) {
+    g.selectAll("path")
+    .data(jsonData.features)
+    .enter()
+    .append("path")
+    .attr("class","continent")
+    .attr("d", path)
+    });
+
+function readandpivot() {
+
+d3.csv("covid19.csv").then((covidData) => {
+
+console.log(covidData) // log the original data set for debugging purposes   
+
+
+// the following performs a data pivot on the "prname" column, making the prname into
+// a column and grouping the provinces according to date. 
+// The numtotal field (total number of covid cases) is used as the data 
+// value for each province column.
+// The only other field preserved is "data" which is converted into a javascript
+// date using the d3 parsetime factory.
+
+// the rowTemple are fields/columns for the resulting data set. 
+let rowTemplate = {
+    "Alberta": 0,
+    "British Columbia": 0,
+    //"Canada": 0,
+    "Manitoba": 0,
+    "New Brunswick": 0,
+    "Newfoundland and Labrador": 0,
+    "Northwest Territories": 0,
+    "Nova Scotia": 0,
+    "Nunavut": 0,
+    "Ontario": 0,
+    "Prince Edward Island": 0,
+    "Quebec": 0,
+    //"Repatriated travellers": 0, 
+    "Saskatchewan": 0,
+    "Yukon": 0
+}
+let parseTime = d3.timeParse("%d-%m-%Y");
+let stackableData = d3.nest().key(d => d.date)
+    .rollup(d => {
+        return d.reduce((prev, curr) => {
+            if (curr.prname in prev)
+                prev[curr.prname] = +curr.numtotal;
+            return prev;
+        }, { ...rowTemplate })
+    }).entries(covidData).map(d => ({ date: parseTime(d.key), ...d.value }))
+
+console.log(stackableData) // logged for the provinces should be columns now
+
+
+
+var statusArray = [ "Alberta",
+    "British Columbia",
+    //"Canada": 0,
+    "Manitoba",
+    "New Brunswick",
+    "Newfoundland and Labrador",
+    "Northwest Territories",
+    "Nova Scotia",
+    "Nunavut",
+    "Ontario",
+    "Prince Edward Island",
+    "Quebec",
+    //"Repatriated travellers": 0, 
+    "Saskatchewan",
+    "Yukon"];
+  
+    
+    
+
+    var svg = d3.select("#my_dataviz")
+  .append("svg")
+  
+
+    var container = d3_container.container();
+    container
+    .height(500)
+    .width(960)
+    .margin(50, 0, 30, 50);
+
+    
+
+  var width = container.contentWidth(),
+    height = container.contentHeight();
+
+    svg.call(container);
+
+  var content = container.content();
+
+      var parsedData = stackableData.map(function (d) {
+      var dataObject = {
+        date: d.date
+      };
+      statusArray.forEach(function (s) {
+        dataObject[s] = +d[s];
+      })
+      console.log(dataObject)
+      return dataObject;
+    });
+
+    var stack = d3.stack()
+      .keys(statusArray)
+      .offset(d3.stackOffsetNone)
+      ;
+
+    var layers = stack(parsedData);
+
+    function getDate(d) {
+      return d.date;
+    }
+
+    var x = d3.scaleTime()
+      .domain([parsedData[0].date, parsedData[parsedData.length - 1].date])
+      .range([0, width]);
+
+    var y = d3.scaleLinear()
+      .domain([0, d3.max(layers, stackMax)])
+      .range([height, 0]);
+
+    var xAxis = d3.axisBottom(x),
+      yAxis = d3.axisRight(y);
+
+    var gX = content.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("class", "axis axis--x")
+      .call(xAxis)
+      .select(".domain")
+      .remove();
+
+    var gY = content.append("g")
+      .attr("class", "axis axis--y")
+      .call(yAxis);
+
+    var colors = statusArray.map(function (d, i) {
+      return d3.interpolateWarm(i / statusArray.length);
+    });
+
+    var colorScale = d3.scaleOrdinal()
+      .domain(statusArray)
+      .range(colors);
+
+    var legendOffset = container.margin().left() + width - 12 * statusArray.length;
+
+    var legend = d3.legendColor()
+      .shapeWidth(30)
+      .cells(statusArray.length)
+      .orient("vertical")
+      .scale(colorScale)
+
+    var area = d3.area()
+      .x(function (d, i) { return x(d.data.date) })
+      .y0(function (d) { return y(d[0]); })
+      .y1(function (d) { return y(d[1]); })
+      .curve(d3.curveBasis);
+
+    var layerGroups = content.selectAll(".layer")
+      .data(layers)
+      .enter().append("g")
+      .attr("class", "layer");
+
+    svg.append("g")
+      .attr("class", "legend")
+      .attr("transform", "translate(" + legendOffset.toString() + ",0)");
+
+    svg.select(".legend")
+      .call(legend);
+
+    layerGroups.append("path")
+      .attr("d", area)
+      .attr("fill", function (d, i) {
+        return colors[i];
+      });
+
+    function stackMax(layer) {
+      return d3.max(layer, function (d) { return d[1]; });
+    }
+
+})
+}
+
+
+
+</script>
+</body>
+
+</html>

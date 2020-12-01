@@ -1,0 +1,477 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Part A Submission</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        body {
+            margin: 50px;
+            width: auto;
+            font: 14px arial;
+            text-align: justify;
+            padding: 25px;
+        }
+        
+        .y-axis line {
+            opacity: .2;
+        }
+        
+        .y-axis path {
+            display: none;
+        }
+        
+        .line {
+            fill: none;
+            stroke-width: 1.5px;
+            opacity: .75;
+        }
+        
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+        
+        .lineHoverText {
+            text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+        }
+        
+        .hoverCircle {
+            opacity: .75;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PROJECT PART A COMP 6774</h1>
+    <p><b>Submitted by:</b> Sumayyah Musa (sbmusa)</p>
+
+    <h2>Attribution</h2>
+    <p>
+        I attest that this webpage, which contains presentation of COVID-19 data visualizations for 5 countries, was solely my work, using some of the class texts and videos and also <a href="https://bl.ocks.org/LemoNode/5a64865728c6059ed89388b5f83d6b67">
+        Robert Pattersson's Block</a>.
+    </p>
+    <h2>Analysis</h2>
+    <p>
+        The question to be answered is: <b>How successful has the USA been in responding to the COVID-19 pandemic compared to other countries?</b> The dataset used in making these d3 visualizations was downloaded in CSV format <a href="https://github.com/owid/covid-19-data/tree/master/public/data">here</a>,
+        and preprocessed using jupyter notebook. A subset of the data containing 5 selected countries, including USA, with the mean of the stringency index, total cases and deaths per million, in each month since March, up till October for each of the
+        countries, which are: United States, United Kingdom, New Zealand, Canada and Australia.
+    </p>
+
+    <h3>A D3 STACKED BAR CHART</h3>
+    <div>
+        <svg id="chart" width="700" height="500">
+        </svg> Select month:
+        <select id="month"></select>
+
+        <input type="checkbox" id="sort"> Toggle sort
+
+        <script>
+            d3.csv("grouped-covid-data.csv").then(d => chart(d))
+
+            function chart(csv) {
+
+                var keys = csv.columns.slice(2);
+
+                var month = [...new Set(csv.map(d => d.month))]
+                var location = [...new Set(csv.map(d => d.location))]
+
+                var options = d3.select("#month").selectAll("option")
+                    .data(month)
+                    .enter().append("option")
+                    .text(d => d)
+
+                var svg = d3.select("#chart"),
+                    margin = {
+                        top: 50,
+                        left: 50,
+                        bottom: 0,
+                        right: 0
+                    },
+                    width = +svg.attr("width") - margin.left - margin.right,
+                    height = +svg.attr("height") - margin.top - margin.bottom;
+
+                var x = d3.scaleBand()
+                    .range([margin.left, width - margin.right])
+                    .padding(0.1)
+
+                var y = d3.scaleLinear()
+                    .rangeRound([height - margin.bottom, margin.top])
+
+                var xAxis = svg.append("g")
+                    .attr("transform", `translate(0,${height - margin.bottom})`)
+                    .attr("class", "x-axis")
+
+                var yAxis = svg.append("g")
+                    .attr("transform", `translate(${margin.left},0)`)
+                    .attr("class", "y-axis")
+
+                var z = d3.scaleOrdinal()
+                    .range(["#ff8c00", "#6b486b", "#20c8b8"])
+                    .domain(keys);
+
+                update(d3.select("#month").property("value"), 0)
+
+                function update(input, speed) {
+
+                    var data = csv.filter(f => f.month == input)
+
+                    data.forEach(function(d) {
+                        d.total = d3.sum(keys, k => +d[k])
+                        return d
+                    })
+
+                    y.domain([0, d3.max(data, d => d3.sum(keys, k => +d[k]))]).nice();
+
+                    svg.selectAll(".y-axis").transition().duration(speed)
+                        .call(d3.axisLeft(y).ticks(null, "s"))
+
+                    data.sort(d3.select("#sort").property("checked") ?
+                        (a, b) => b.total - a.total :
+                        (a, b) => location.indexOf(a.location) - location.indexOf(b.location))
+
+                    x.domain(data.map(d => d.location));
+
+                    svg.selectAll(".x-axis").transition().duration(speed)
+                        .call(d3.axisBottom(x).tickSizeOuter(0))
+
+                    var group = svg.selectAll("g.layer")
+                        .data(d3.stack().keys(keys)(data), d => d.key)
+
+                    group.exit().remove()
+
+                    group.enter().append("g")
+                        .classed("layer", true)
+                        .attr("fill", d => z(d.key));
+
+                    var bars = svg.selectAll("g.layer").selectAll("rect")
+                        .data(d => d, e => e.data.location);
+
+                    bars.exit().remove()
+
+                    bars.enter().append("rect")
+                        .attr("width", x.bandwidth())
+                        .merge(bars)
+                        .transition().duration(speed)
+                        .attr("x", d => x(d.data.location))
+                        .attr("y", d => y(d[1]))
+                        .attr("height", d => y(d[0]) - y(d[1]))
+
+                    var text = svg.selectAll(".text")
+                        .data(data, d => d.location);
+
+                    text.exit().remove()
+
+                    text.enter().append("text")
+                        .attr("class", "text")
+                        .attr("text-anchor", "middle")
+                        .merge(text)
+                        .transition().duration(speed)
+                        .attr("x", d => x(d.location) + x.bandwidth() / 2)
+                        .attr("y", d => y(d.total) - 5)
+                }
+
+                // Add title	  
+                svg.append("svg:text")
+                    .attr("class", "title")
+                    .attr("x", 40)
+                    .attr("y", 20)
+                    .text("Stringency index, total covid cases and total covid deaths per million");
+
+                var legend = svg.append("g")
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", 10)
+                    .attr("text-anchor", "end")
+                    .selectAll("g")
+                    .data(keys.slice().reverse())
+                    .enter().append("g")
+                    .attr("transform", function(d, i) {
+                        return "translate(0," + i * 20 + ")";
+                    });
+
+                legend.append("rect")
+                    .attr("x", width - 17)
+                    .attr("width", 15)
+                    .attr("height", 15)
+                    .attr("fill", z)
+                    .attr("stroke", z)
+                    .attr("stroke-width", 2)
+                    .on("click", function(d) {
+                        update(d)
+                    });
+
+                legend.append("text")
+                    .attr("x", width - 24)
+                    .attr("y", 9.5)
+                    .attr("dy", "0.32em")
+                    .text(function(d) {
+                        return d;
+                    });
+
+
+                var select = d3.select("#month")
+                    .on("change", function() {
+                        update(this.value, 750)
+                    })
+                var checkbox = d3.select("#sort")
+                    .on("click", function() {
+                        update(select.property("value"), 750)
+                    })
+            }
+        </script>
+
+        <p>
+            The above stacked bar chart shows the mean total number of cases, deaths per million and the stringency index (Government Response Stringency Index: composite measure based on 9 response indicators including school closures, workplace closures, and travel
+            bans, rescaled to a value from 0 to 100 (100 = strictest response)), for each country in each month.The month can be toggled and sorted. It shows that the United State had a good stringency index at the beginning of the pandemic around March/April,
+            and later relaxed their response to it, subsequently, they had the highest number of confirmed cases, and deaths as compared to other countries, especially New Zealand, who had the least number of confirmed cases.
+        </p>
+    </div>
+    <div>
+        <h3>A D3 GROUPED BAR CHART</h3>
+        <svg id="svg" width="700" height="500"></svg>
+        <script>
+            var svg = d3.select("#svg"),
+                margin = {
+                    top: 20,
+                    right: 20,
+                    bottom: 30,
+                    left: 40
+                },
+                width = +svg.attr("width") - margin.left - margin.right,
+                height = +svg.attr("height") - margin.top - margin.bottom,
+                g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            // The scale spacing the groups:
+            var x0 = d3.scaleBand()
+                .rangeRound([0, width])
+                .paddingInner(0.1);
+
+            // The scale for spacing each group's bar:
+            var x1 = d3.scaleBand()
+                .padding(0.05);
+
+            var y = d3.scaleLinear()
+                .rangeRound([height, 0]);
+
+            var z = d3.scaleOrdinal()
+                .range(["#385a7c", "#a05d56", "#d0743c", "#ff8c00"]);
+
+            d3.csv("grouped-covid-data.csv", function(d, i, columns) {
+                for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+                return d;
+            }).then(function(data) {
+                console.log(data);
+
+                var keys = data.columns.slice(2);
+
+                x0.domain(data.map(function(d) {
+                    return d.location;
+                }));
+                x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+                y.domain([0, d3.max(data, function(d) {
+                    return d3.max(keys, function(key) {
+                        return d[key];
+                    });
+                })]).nice();
+
+                g.append("g")
+                    .selectAll("g")
+                    .data(data)
+                    .enter().append("g")
+                    .attr("class", "bar")
+                    .attr("transform", function(d) {
+                        return "translate(" + x0(d.location) + ",0)";
+                    })
+                    .selectAll("rect")
+                    .data(function(d) {
+                        return keys.map(function(key) {
+                            return {
+                                key: key,
+                                value: d[key]
+                            };
+                        });
+                    })
+                    .enter().append("rect")
+                    .attr("x", function(d) {
+                        return x1(d.key);
+                    })
+                    .attr("y", function(d) {
+                        return y(d.value);
+                    })
+                    .attr("width", x1.bandwidth())
+                    .attr("height", function(d) {
+                        return height - y(d.value);
+                    })
+                    .attr("fill", function(d) {
+                        return z(d.key);
+                    });
+
+                g.append("g")
+                    .attr("class", "axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x0));
+
+                g.append("g")
+                    .attr("class", "y axis")
+                    .call(d3.axisLeft(y).ticks(null, "s"))
+                    .append("text")
+                    .attr("x", 2)
+                    .attr("y", y(y.ticks().pop()) + 0.5)
+                    .attr("dy", "0.32em")
+                    .attr("fill", "#000")
+                    .attr("font-weight", "bold")
+                    .attr("text-anchor", "start")
+                    .text("Number of Confirmed Cases");
+
+                var legend = g.append("g")
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", 10)
+                    .attr("text-anchor", "end")
+                    .selectAll("g")
+                    .data(keys.slice().reverse())
+                    .enter().append("g")
+                    .attr("transform", function(d, i) {
+                        return "translate(0," + i * 20 + ")";
+                    });
+
+                legend.append("rect")
+                    .attr("x", width - 17)
+                    .attr("width", 15)
+                    .attr("height", 15)
+                    .attr("fill", z)
+                    .attr("stroke", z)
+                    .attr("stroke-width", 2)
+                    .on("click", function(d) {
+                        update(d)
+                    });
+
+                legend.append("text")
+                    .attr("x", width - 24)
+                    .attr("y", 9.5)
+                    .attr("dy", "0.32em")
+                    .text(function(d) {
+                        return d;
+                    });
+
+                var filtered = [];
+
+                ////
+                //// Update and transition on click:
+                ////
+
+                function update(d) {
+
+                    //
+                    // Update the array to filter the chart by:
+                    //
+
+                    // add the clicked key if not included:
+                    if (filtered.indexOf(d) == -1) {
+                        filtered.push(d);
+                        // if all bars are un-checked, reset:
+                        if (filtered.length == keys.length) filtered = [];
+                    }
+                    // otherwise remove it:
+                    else {
+                        filtered.splice(filtered.indexOf(d), 1);
+                    }
+
+                    //
+                    // Update the scales for each group(/locations)'s items:
+                    //
+                    var newKeys = [];
+                    keys.forEach(function(d) {
+                        if (filtered.indexOf(d) == -1) {
+                            newKeys.push(d);
+                        }
+                    })
+                    x1.domain(newKeys).rangeRound([0, x0.bandwidth()]);
+                    y.domain([0, d3.max(data, function(d) {
+                        return d3.max(keys, function(key) {
+                            if (filtered.indexOf(key) == -1) return d[key];
+                        });
+                    })]).nice();
+
+                    // update the y axis:
+                    svg.select(".y")
+                        .transition()
+                        .call(d3.axisLeft(y).ticks(null, "s"))
+                        .duration(500);
+
+
+                    //
+                    // Filter out the bands that need to be hidden:
+                    //
+                    var bars = svg.selectAll(".bar").selectAll("rect")
+                        .data(function(d) {
+                            return keys.map(function(key) {
+                                return {
+                                    key: key,
+                                    value: d[key]
+                                };
+                            });
+                        })
+
+                    bars.filter(function(d) {
+                            return filtered.indexOf(d.key) > -1;
+                        })
+                        .transition()
+                        .attr("x", function(d) {
+                            return (+d3.select(this).attr("x")) + (+d3.select(this).attr("width")) / 2;
+                        })
+                        .attr("height", 0)
+                        .attr("width", 0)
+                        .attr("y", function(d) {
+                            return height;
+                        })
+                        .duration(500);
+
+                    //
+                    // Adjust the remaining bars:
+                    //
+                    bars.filter(function(d) {
+                            return filtered.indexOf(d.key) == -1;
+                        })
+                        .transition()
+                        .attr("x", function(d) {
+                            return x1(d.key);
+                        })
+                        .attr("y", function(d) {
+                            return y(d.value);
+                        })
+                        .attr("height", function(d) {
+                            return height - y(d.value);
+                        })
+                        .attr("width", x1.bandwidth())
+                        .attr("fill", function(d) {
+                            return z(d.key);
+                        })
+                        .duration(500);
+
+
+                    // update legend:
+                    legend.selectAll("rect")
+                        .transition()
+                        .attr("fill", function(d) {
+                            if (filtered.length) {
+                                if (filtered.indexOf(d) == -1) {
+                                    return z(d);
+                                } else {
+                                    return "white";
+                                }
+                            } else {
+                                return z(d);
+                            }
+                        })
+                        .duration(100);
+                }
+            });
+        </script>
+        <p>
+            This groupedbar chart shows the mean number of cases and deaths per million, and the stringency index of each country. You can click on each legend to filter out and show the other bars clearly. For example, clicking on the legend for total cases, and
+            total deaths, shows that New Zealand has the highest stringency index, and therefore, has the best response to the pandemic, as compared to USA and the other countries.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Part B Submission (sbmusa)</title>
+</head>
+<body>
+    <h1>PROJECT PART B COMP 6774</h1>
+    <strong>Submitted by: </strong> SUMAYYAH MUSA (sbmusa)<br>
+    
+    <h2>Attributions</h2>
+    <p>I attest that this webpage, which contains WHAT and WHY analysis comparing the COVID-19 data for USA with 4 other countries, 
+        was solely my work, using some of the class texts and Tamara Munzner's book of Visualization Design.</p>
+
+    <h2>Materials</h2>
+    <p>The dataset used in making these d3 visualizations was downloaded in CSV format <a href="https://github.com/owid/covid-19-data/tree/master/public/data">here,</a> and preprocessed using jupyter notebook. A subset of the 
+        data containing 5 selected countries, including USA, with the mean of the stringency index, total cases and deaths per million, in each month 
+        since March, up till October for each of the countries, which are: United States, United Kingdom, New Zealand, Canada and Australia.</p>
+
+    <h2>Problem</h2>
+    <ul>
+        <li><b>Broad goal: </b> <i>To compare USA COVID-19 response with Canada, New Zealand, UK and Austrailia.</i></li>
+        <li><b>Sub goal: </b><i>To compare the stringency index of the five countries.</i></li>
+    </ul>
+    
+    <h2>What Analysis</h2>
+    <h4>
+        Covid19-data.csv:
+    </h4>
+        This dataset <b>shows</b> each countries with their mean stringency index, mean total cases and deaths per million in a month.
+    <ul>
+        <li>location identifies the geographical location (country).<ul><li><b>What:</b>Geometry, categorical</li></ul></li>
+        <li>month is the month in which the data was taken.<ul><li><b>What:</b>Ordered, ordinal and cyclic</li></ul></li>
+        <li>mean_stringency_index is the composite measure of government's response based on a 9-response indicator including school closures, 
+            workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)<ul><li><b>What:</b>Ordered, quantitative.</li></ul></li>
+        <li>mean_total_cases_per_million shows the average total confirmed cases of COVID-19 per 1,000,000 people.<ul><li><b>What:</b>Ordered, quantitative</li></ul></li>
+        <li>mean_total_deaths_per_million shows the average total deaths attributed to COVID-19 per 1,000,000 people<ul><li><b>What:</b>Ordered, quantitative</li></ul></li>
+    </ul>
+
+    <h2>Why Analysis</h2>
+    <p>The sub goal is to compare the government's response (stringency index) to COVID19 of the countries based on a 9-response indicator including school closures, 
+        workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response). The WHY analysis would be:</p>
+        <ul>
+            <li><b>Analysis level: </b> action/target is "discover similarities". I think we can identify which countries share same high months and low months.</li>
+            <li><b>Search level: </b> action/target is "explore distribution". Based off our working data, we can explore how consistent countries can be retaining a high response rate to COVID19.</li>
+            <li><b>Quuey level: </b> action/target is "compare trends". Since we are working with response rate for countries, it would be helpful to compare 
+                the various government responses across each of the months.</li>
+        </ul>
+</body>
+</html>

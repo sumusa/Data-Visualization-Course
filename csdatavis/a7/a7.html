@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASSIGNMENT 7</title>
+    </head>
+
+    <body>
+        <h1>Assignment 7 Submission</h1>
+        <strong>NAME: </strong> SUMAYYAH MUSA<br>
+        <strong>COURSE: </strong>COMP 6774<br> 
+        <p>This is my Submission for Assignment 7</p>
+        <h2>Attributions</h2>
+        <p>I attest that this is of my own handy work</p>
+        <h2>Solution</h2>
+        <h1>Data</h1>
+        <h2>Summary and What categorization</h2>
+        <h2><b>Candidate.csv:</h2></b>
+        <p>election_id : An identifying column comprised of "GE" (for "General Election"), the election number, and the year in which the election occurred.</p>
+        <p>What : Ordered and Ordinal</p>
+        <p>event Number  : An identifying column given by Elections Canada in the form of a four-digit number. The first two digits are the election number, and the final two digits are zeroes.</p>
+        <p>What : Ordered and Ordinal </p>
+        <p>electoral District Number  : An identifying column for ridings. At each election, each riding has a unique code. The first digit indicates region, the second digit indicates province, and the remaining digits are sequential.</p>
+        <p>What : Ordered ,Categorical and Ordinal</p>
+        <p>Ballot Sequence Number : An identifying column for candidates</p>
+        <p>What : Categorical </p>
+        <p>Candidate : The Full name of Candidate </p>
+        <p>What :Categorical </p>
+        <p>Candidate First Name : The First Name of the Candidate </p>
+        <p>What :Categorical</p>
+        <p>Candidate Middle Name : The middle name or initial (if any are provided) of the candidate.</p>
+        <p>What : Categorical</p>
+        <P>Candidate Family Name : The family name of the candidate.</P>
+        <p>What : Categorical</p>
+        <p>Candidate Gender Code : The gender of the candidate.</p>
+        <p>What : Categorical</p>
+        <p>Candidate Occupation : The candidate's occupation (in English).</p>
+        <p>What : Categorical</p>
+        <p>profession_du_candidat_français_french : The Candidate Occupation </p>
+        <p>What : Categorical</p>
+        <p>incumbent_indicator_indicateur_candidat_sortant : An indicator for whether the candidate is the incumbent Member of Parliament.</p>
+        <p>What : Categorical </p>
+        <p>elected_candidate_indicator_indicateur_du_candidat_élu : An indicator for whether the candidate was elected at this election.</p>
+        <p>What : Categorical</p>
+        <p>candidate_residence_résidence_du_candidat : The town or locality in which the candidate resides.</p>
+        <p>What :Categorical</p>
+        <p>candidate_province_english_anglais : The province in which the candidate resides.</p>
+        <p>What :Categorical</p>
+        <p>province_du_candidat_français_french : The province in which the candidate resides.</p>
+        <p>What : Categorical</p>
+        <p>party_abbreviation_english_anglais : An abbreviation or short name of a political party, for ease in typing syntax.</p>
+        <p>What : Categorical</p>
+        <p>abréviation_de_parti_français_french : An abbreviation or short name of a political party, for ease in typing syntax.</p>
+        <p>What :Categorical</p>
+
+        <h2><b>Result.csv:</h2></b>
+        <p>election_id : An identifying column comprised of "GE" (for "General Election"), the election number, and the year in which the election occurred.</p>
+        <p>What : Ordered and Ordinal</p>
+        <p>event_number : An identifying column given by Elections Canada in the form of a four-digit number. The first two digits are the election number, and the final two digits are zeroes.</p>
+        <p>What : Ordered and Ordinal</p>
+        <p>electoral_district_number_numéro_de_circonscription : An identifying column for ridings. At each election, each riding has a unique code. The first digit indicates region, the second digit indicates province, and the remaining digits are sequential.</p>
+        <p>What : Categorical</p>
+        <p>polling_station_number_numéro_du_bureau_de_scrutin : An identifying column for polling stations. At each election, in each riding, a polling station is identified by a unique code.</p>
+        <p>What : Categorical,Ordered and Ordinal</p>
+        <p>ballot_sequence_number : An identifying column for candidates. At each election, in each riding, a candidate is identified by a unique number. This number represents the position of the candidate when listed alphabetically by surname.</p>
+        <p>What : Categorical,Ordered and Ordinal</p>
+        <p>candidate_poll_votes_count_votes_du_candidat_pour_le_bureau : The number of votes received by the candidate at this polling station in this election.</p>
+        <p>What :Categorical and Ordinal</p>
+
+
+        <H2>Why categorization</H2>
+        <P>The stated goal directs us to how the popular vote in each province compares to the representation in Federal Parliament, for the top four federal political parties.
+        It may be worthwhile to suggest a more detailed interpretation of this goal, but based on this general objective only, here is the action/target pairs identified per the Why methodology:</P>
+        <br>
+        <p>Analysis level: action/target is "discover features". With the vague goal about how the popular vote in each province compares to the representation in Federal Parliament, for the top four federal political parties.
+            , this is a very broad analysis objective.<br>
+            Search level: action/target is "browse similarity". Since we are directed to The Result and candidates data , but nothing about how Successful the candidates are able to vote the number of accepted votes.<br>
+            Query level: action/target is "compare distribution". Since we are directed to Result and Candidates data, I think it would be helpful to compare distribution of these attributes with respect to the winner of the Election. I could also see "summarize" being useful, but too far from the objective of finding "patterns".</p>
+    </body>
+</html>

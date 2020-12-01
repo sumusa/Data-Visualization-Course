@@ -1,0 +1,1 @@
+To preview the result of my Client work, load the "Submission.R" file in RStudio. Map showing bus routes and stops of Metrobus transit for St.John's, Newfoundland ,wwill be visible.
