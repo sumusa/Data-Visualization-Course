@@ -20,12 +20,15 @@
 
     <h2>Problem Description and Objectives</h2>
     <h3>Problem</h3>
+    <p>The problem is to examine and compare the efectiveness of the response of the USA Government to covid-19 pandemic, with 9 other countries. The success of each country should be determined based on how they have been able to detect people with the
+        virus, contain and reduce the spread, treat infected individuals, and also reduce the number of deaths from the disease in their countries.</p>
     <ul>
         <li><b>Broad goal:</b> Provide visualizations to show how successful the U.S.A. has been in responding to the COVID-19 pandemic as compared to some other countries.</li>
-        <li><b>Sub-goal:</b></li>
+        <li><b>Sub-goals:</b></li>
         <ol>
-            <li>Compare how the number of confirmed COVID-19 cases and deaths relates to the Government Response Stringency Index over time.</li>
-            <li>Show if increasingly strict measures affect the rate of infection in each of the six countries.</li>
+            <li>Compare the number of tests performed per thousand people and per confirmed case by each country;</li>
+            <li>Examine the total number of confirmed cases and confirmed deaths by country;</li>
+            <li>Show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 infection in each of the ten countries.</li>
         </ol>
     </ul>
 
@@ -76,7 +79,8 @@
             <a href="covid-data-wrangling.html">here</a>
         </li>
 
-        <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> of countries and their respective up to date covid-19 statistics.
+        <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> and <b>field</b> dataset representing the number of confirmed covid cases, deaths, new cases, tests, reproductive rate, of ten countries, including United States. each variable
+        were measured daily, and can be interpolated to calculate more variables that are relevant to the stated objectives. The dataset availability is <b>dynamic</b>, in that new items are added daily.
         <ul>
             <li>
                 Iso_code:
@@ -98,9 +102,9 @@
                 </ul>
             </li>
             <li>
-                Date: Date of observation
+                Date: Day of the month, month and year of observation,
                 <ul>
-                    <li><b>What:</b> Quantitative</li>
+                    <li><b>What:</b> Quantitative, sequential, hierarchical</li>
                 </ul>
             </li>
             <li>
@@ -178,7 +182,7 @@
             <li>
                 Reproduction_rate: Real-time estimate of the effective reproduction rate (R) of covid-19, which is a way of rating coronavirus or any disease's ability to spread, or the number of people that one infected person will pass on a virus to, on average.
                 <ul>
-                    <li><b>What:</b> Ordinal</li>
+                    <li><b>What:</b> Ordinal and sequential</li>
                 </ul>
             </li>
             <li>
@@ -206,7 +210,7 @@
                 </ul>
             </li>
             <li>
-                Test_units: Units used by the location to report its testing data
+                Test_units: Units used by the location to report its testing data which coud be either the number of <b>tests performed</b> or <b>samples tested</b>.
                 <ul>
                     <li><b>What:</b> Categorical</li>
                 </ul>
@@ -214,7 +218,7 @@
             <li>
                 Stringency_index: Government Response Stringency Index - a composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)
                 <ul>
-                    <li><b>What:</b> Ordinal</li>
+                    <li><b>What:</b> Ordinal and sequential</li>
                 </ul>
             </li>
             <li>
@@ -224,25 +228,44 @@
                 </ul>
             </li>
             <li>
-                Life_expectancy: life expectancy at birth in 2019
+                Life_expectancy: a statistical measure of the average time a person is expected to live, based on the year of birth, in 2019
                 <ul>
-                    <li><b>What:</b> Quantitative</li>
+                    <li><b>What:</b> Quantitative and sequential</li>
                 </ul>
             </li>
             <li>
                 Human_development_index: Summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and have a decent standard of living
                 <ul>
-                    <li><b>What:</b> Ordinal</li>
+                    <li><b>What:</b> Ordinal and sequential</li>
                 </ul>
             </li>
         </ul>
     </ul>
     <h3><b>Why Analysis</b></h3>
-    <p>The stated goal is to compare the success and effectiveness of USA's response to covid-19 pandemic with 9 other countries. Here is the action/target pairs identified:</p>
+    <p>The stated goal is to compare the success of USA's response to covid-19 pandemic with the response of that of 9 other countries. Here are the action/target pairs identified:</p>
     <ul>
-        <li>Analysis level: action/target is <b>discover features</b>. </li>
+        <li>Analyze level: action/target is <b>discover features</b>. The columns (confirmed cases, deaths, reproduction rate, etc), will all be presented in various charts, for the audience to disover the patterns of these variables.</li>
+        <li>Search level: action/target is <b>browse trends</b>. The location is somewhat known, since we have values of the features, but the target is unknown. We are directed to find patterns, increases, decreases, majorly trends in the data observed.</li>
+        <li>Query level: action/target is <b>summarize features</b>. The designs will summarize all the results accross all countries in order to determine the country with the best response to covid-19.</li>
     </ul>
-
+    <p>The first subgoal is to compare the number of tests performed per thousand people and per confirmed case by each country.</p>
+    <ul>
+        <li>Analysis level: action/target is <b>present features</b>. The number of tests performed by a country will be shown, and </li>
+        <li>Search level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+    </ul>
+    <p>The second subgoal is to </p>
+    <ul>
+        <li>Analysis level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Search level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+    </ul>
+    <p>The third subgoal is to </p>
+    <ul>
+        <li>Analysis level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Search level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+    </ul>
     <h2>Design</h2>
     <div id="myDiv" style="width:80%; height:100%"></div>
     <script type='text/javascript' src='final.js'></script>
