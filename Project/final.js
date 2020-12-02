@@ -156,3 +156,91 @@ var layout = {
 var data = [China2, France2, Italy2, South_Korea2, United_Kingdom2, United_States2];
 
 Plotly.newPlot('myDiv2', data, layout);
+
+Plotly.d3.csv('https://raw.githubusercontent.com/sumusa/Data-Visualization-Course/master/Project/covid-data.csv', function(err, rows) {
+
+    function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
+
+    var allCountryNames = unpack(rows, 'location'),
+        allDate = unpack(rows, 'date'),
+        allCases = unpack(rows, 'total_cases_per_million'),
+        listofCountries = [],
+        currentCountry,
+        currentCase = [],
+        currentDate = [];
+
+    for (var i = 0; i < allCountryNames.length; i++) {
+        if (listofCountries.indexOf(allCountryNames[i]) === -1) {
+            listofCountries.push(allCountryNames[i]);
+        }
+    }
+
+    function getCountryData(chosenCountry) {
+        currentCase = [];
+        currentDate = [];
+        for (var i = 0; i < allCountryNames.length; i++) {
+            if (allCountryNames[i] === chosenCountry) {
+                currentCase.push(allCases[i]);
+                currentDate.push(allDate[i]);
+            }
+        }
+    };
+
+    // Default Country Data
+    setBubblePlot('United States');
+
+    function setBubblePlot(chosenCountry) {
+        getCountryData(chosenCountry);
+
+        var trace1 = {
+            x: currentDate,
+            y: currentCase,
+            mode: 'lines+markers',
+            marker: {
+                size: 5,
+                opacity: 0.5,
+            },
+        }
+
+        var data = [trace1];
+
+        var layout = {
+            title: 'Total Confirmed Cases of each countries from January till December 2020',
+            xaxis: {
+                title: {
+                    text: 'Date'
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Total Confirmed Cases per million'
+                }
+            }
+        }
+
+        Plotly.newPlot('myDiv3', data, layout);
+
+    };
+    var innerContainer = document.querySelector('[data-num="0"'),
+        plotEl = innerContainer.querySelector('.plot'),
+        countrySelector = innerContainer.querySelector('.countrydata');
+
+
+    function assignOptions(textArray, selector) {
+        for (var i = 0; i < textArray.length; i++) {
+            var currentOption = document.createElement('option');
+            currentOption.text = textArray[i];
+            selector.appendChild(currentOption);
+        }
+    }
+
+    assignOptions(listofCountries, countrySelector);
+
+    function updateCountry() {
+        setBubblePlot(countrySelector.value);
+    }
+
+    countrySelector.addEventListener('change', updateCountry, false);
+});

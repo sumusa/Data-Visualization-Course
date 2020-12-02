@@ -27,7 +27,7 @@
         <li><b>Sub-goals:</b></li>
         <ol>
             <li>Compare the number of tests performed per thousand people and per confirmed case by each country;</li>
-            <li>show the total number of confirmed cases and confirmed deaths by country;</li>
+            <li>show the case fatality rate which is the ratio of total number of confirmed deaths and confirmed cases by country;</li>
             <li>Show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 infection in each of the ten countries.</li>
         </ol>
     </ul>
@@ -239,6 +239,12 @@
                     <li><b>What:</b> Ordinal and sequential</li>
                 </ul>
             </li>
+            <li>
+                Case_fatality_rate: The proportion of people who die from covid-19 among all individuals diagnosed with the disease over a certain period of time. It is used to measure disease severity and also to evaluate the effect of treatment.
+                <ul>
+                    <li><b>What:</b> Quantitative, Ordinal and sequential</li>
+                </ul>
+            </li>
         </ul>
     </ul>
     <h3><b>Why Analysis</b></h3>
@@ -250,21 +256,21 @@
     </ul>
     <p>The first subgoal is to compare the number of tests performed per thousand people and per confirmed case by each country.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. The number of tests performed by a country will be shown, and </li>
-        <li>Search level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
-        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Analyze level: action/target is <b>present features</b>. The number of tests performed per thousand people and tests performed per confirmed case by a country will be presented.</li>
+        <li>Search level: action/target is <b>lookup trends</b>. Find the patterns of testing across the ten countries.</li>
+        <li>Query level: action/target is <b>identify distribution</b>. Identify the country with the highest or lowest tests per case and per thousand people.</li>
     </ul>
-    <p>The second subgoal is to show the total number of confirmed cases and confirmed deaths by country.</p>
+    <p>The second subgoal is to show the case fatality rate which is the ratio of total number of confirmed deaths and confirmed cases by country.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
-        <li>Search level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
-        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Analyze level: action/target is <b>present features</b>. Present the case fatality rate of covid-19 by country.</li>
+        <li>Search level: action/target is <b>lookup trends</b>. Find the patterns of covid-19 infection by the number of cases and deaths from the virus across the ten countries.</li>
+        <li>Query level: action/target is <b>identify distributions</b>. Identify the country with the highest or lowest confirmed cases of covid-19 and confirmed deaths from the virus.</li>
     </ul>
     <p>The third subgoal is to show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 infection in each of the ten countries.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
-        <li>Search level: action/target is <b>lookup dependencies</b>. The necessary columns are presented in various charts.</li>
-        <li>Query level: action/target is <b>present features</b>. The necessary columns are presented in various charts.</li>
+        <li>Analyze level: action/target is <b>present features</b>. Present a viz showing the stringency index and reproduction rate of covid-19 across all the countries.</li>
+        <li>Search level: action/target is <b>lookup correlations</b>. Find how the stringency index correlates with the reproduction rate</li>
+        <li>Query level: action/target is <b>compare similarities</b>. Compare how similar or how different the patterns of the correlations of the two variables across the countries</li>
     </ul>
     <h2>Design</h2>
     <div id="myDiv" style="width:80%; height:100%"></div>
@@ -272,6 +278,22 @@
 
     <h2>Visualization 2</h2>
     <div id="myDiv2" style="width:80%; height:100%"></div>
+    <script type='text/javascript' src='final.js'></script>
+
+    <h2>Visualization 2</h2>
+    <!-- <div id="myDiv3" style="width:80%; height:100%"></div> -->
+    <div class="showcase__section" id="bubble">
+        <div class="spacer --small"></div>
+        <div id="bubbleplots">
+            <div class="bubbleplot" data-num="0">
+                <div class="plot" id="myDiv3"></div>
+                <div class="control-row">
+                    Country: <select class="countrydata">
+              </select>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type='text/javascript' src='final.js'></script>
 </body>
 
