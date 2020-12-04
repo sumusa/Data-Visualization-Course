@@ -47,6 +47,9 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
                 opacity: 0.5
             },
             name: 'Stringency Index',
+            line: {
+                shape: 'spline'
+            }
         };
 
         var trace2 = {
@@ -64,6 +67,9 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
         var data = [trace1, trace2];
 
         var layout = {
+            autosize: false,
+            width: 1200,
+            height: 550,
             title: 'Government Stringency Index & Reproduction Rate of Covid according to Country<br>' + chosenCountry + ' Stringency Index' + ' and Reproduction Rate',
             yaxis: { title: 'Stringency Index' },
             yaxis2: {
@@ -71,8 +77,9 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
                 titlefont: { color: 'rgb(148, 103, 189)' },
                 tickfont: { color: 'rgb(148, 103, 189)' },
                 overlaying: 'y',
-                side: 'right'
-            }
+                side: 'right',
+            },
+            plot_bgcolor: '#c7c7c7'
         };
 
         Plotly.newPlot('plotdiv', data, layout);

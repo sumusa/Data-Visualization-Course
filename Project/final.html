@@ -6,7 +6,18 @@
     <title>Final Project Submission</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src='./final.js'></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        .control-row {
+            text-align: center;
+            color: brown;
+        }
+        
+        .countrydata {
+            text-align: center;
+            color: brown;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,21 +46,21 @@
     <h3>Materials</h3>
     <ul>
         <li><b>Dataset:</b> The complete
-            <a href="https://covid.ourworldindata.org/data/owid-covid-data.csv"><i>COVID-19 dataset</i></a> used in this project is a collection of daily,
-            <a href="https://github.com/owid/covid-19-data/tree/master/public/data"> country-based covid-19 data</a> maintained by <a href="https://ourworldindata.org/coronavirus"><i>Our World in Data</i></a>. It includes up-to-date data on confirmed
+            <a href="https://covid.ourworldindata.org/data/owid-covid-data.csv "><i>COVID-19 dataset</i></a> used in this project is a collection of daily,
+            <a href="https://github.com/owid/covid-19-data/tree/master/public/data "> country-based covid-19 data</a> maintained by <a href="https://ourworldindata.org/coronavirus "><i>Our World in Data</i></a>. It includes up-to-date data on confirmed
             cases, deaths, hospitalizations, and testing, as well as other variables of potential interest like stringency index, human development index, population, etc. It contains 50 columns and 58470 rows.
         </li>
         <li>
             <b>Code libraries:</b> Some of the code libraries used were
             <ul>
-                <li><a href="https://pandas.pydata.org/docs/getting_started/index.html">Pandas</a>, a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language, was used for cleaning,
-                    reducing and filtering the covid-19 data.
+                <li><a href="https://pandas.pydata.org/docs/getting_started/index.html ">Pandas</a>, a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language, was used for
+                    cleaning, reducing and filtering the covid-19 data.
                 </li>
-                <li><a href="https://plotly.com/javascript/">Plotly.js</a>, a high-level, declarative charting library used for creating various statistical graphs, charts, including 3D charts and SVG maps, was used to create two of the data visualization
+                <li><a href="https://plotly.com/javascript/ ">Plotly.js</a>, a high-level, declarative charting library used for creating various statistical graphs, charts, including 3D charts and SVG maps, was used to create two of the data visualization
                     charts.
                 </li>
                 <li>
-                    <a href="https://d3js.org/">D3.js</a>, a javascript library that helps bring data to life by combining powerful visualization components, was also used in creating one out of the three data visualizations.
+                    <a href="https://d3js.org/ ">D3.js</a>, a javascript library that helps bring data to life by combining powerful visualization components, was also used in creating one out of the three data visualizations.
                 </li>
             </ul>
         </li>
@@ -59,24 +70,24 @@
     <h3><b>Data</b></h3>
     <ul>
         <li><b>Data Wrangling:</b> The dataset was preprocessed using Pandas in
-            <a href="https://jupyter.org/">Jupyter Notebook</a>, an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The
-            <a href="https://en.wikipedia.org/wiki/Data_pre-processing#:~:text=Data%20preprocessing%20includes%20cleaning%2C%20Instance,data%20processing%20can%20be%20interpreted.">data prepocessing</a> involved the following:
+            <a href="https://jupyter.org/ ">Jupyter Notebook</a>, an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The
+            <a href="https://en.wikipedia.org/wiki/Data_pre-processing#:~:text=Data%20preprocessing%20includes%20cleaning%2C%20Instance,data%20processing%20can%20be%20interpreted. ">data prepocessing</a> involved the following:
             <ul>
                 <li> detecting, removal and filling of missing values in the records, although all missing values couldn't be removed as they may indicate that there were no covid cases/deaths/tests for that day. Some of the missing values were replaced with
                     zero for better analysis;</li>
                 <li>dropping of features or variables (columns) that didn't contain any records and were not needed for visualization;</li>
                 <li>grouping and sorting the countries by their
-                    <a href="http://hdr.undp.org/en/content/human-development-index-hdi">human development index (HDI)</a>, and selecting 9 other countries around the United States' HDI, for easier comparison based on their similar capacity to respond
+                    <a href="http://hdr.undp.org/en/content/human-development-index-hdi ">human development index (HDI)</a>, and selecting 9 other countries around the United States' HDI, for easier comparison based on their similar capacity to respond
                     to the pandemic;</li>
                 <li>adding a new column called
-                    <a href="https://en.wikipedia.org/wiki/Infection_rate">infection rate</a>, to determine the frequency of occurrence of new covid cases for particular days. The percentage was calculated by dividing the number of cases by population,
+                    <a href="https://en.wikipedia.org/wiki/Infection_rate ">infection rate</a>, to determine the frequency of occurrence of new covid cases for particular days. The percentage was calculated by dividing the number of cases by population,
                     and multipplying by 100, for a particular day.
                 </li>
                 <li>exporting the
-                    <a href="covid-data.csv">cleaned and preprocessed data</a>, which now contains 37 columns and 3132 rows, into <a href="https://en.wikipedia.org/wiki/Comma-separated_values">csv</a> format for use in Plotly.js and D3.js.</li>
+                    <a href="covid-data.csv ">cleaned and preprocessed data</a>, which now contains 37 columns and 3132 rows, into <a href="https://en.wikipedia.org/wiki/Comma-separated_values ">csv</a> format for use in Plotly.js and D3.js.</li>
             </ul>
             The preprocessing jupyter notebook was converted to HTML file for easy access and it can be viewed
-            <a href="covid-data-wrangling.html">here</a>
+            <a href="covid-data-wrangling.html ">here</a>
         </li>
 
         <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> and <b>field</b> dataset representing the number of confirmed covid cases, deaths, new cases, tests, reproductive rate, of ten countries, including United States. each variable
@@ -84,7 +95,7 @@
         <ul>
             <li>
                 Iso_code:
-                <a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> alpha-3 – three-letter country codes
+                <a href="https://en.wikipedia.org/wiki/ISO_3166-1 ">ISO 3166-1</a> alpha-3 – three-letter country codes
                 <ul>
                     <li><b>What:</b> Categorical</li>
                 </ul>
@@ -277,12 +288,27 @@
     <p>The three visualization designs I want evaluated as part of my submission include:</p>
     <h4>Viz 1</h4>
     <ul>
-        <li><b>Illustration:</b> Case Fatality Ratio of confirmed deaths to cases from covid-19.</li>
-        <div id="myDiv3" style="width:90%; height:100% "></div>
+        <li><b>Illustration:</b> Case Fatality Ratio (CFR) of confirmed deaths to cases from covid-19.</li>
+        <div id="myDiv3 " style="width:90%; height:100% "></div>
         <script type='text/javascript' src='cfr.js'></script>
-        <li><b>Description:</b> </li>
-        <li><b>Sources:</b></li>
-        <li><b>Purpose:</b></li>
+        <li><b>Description:</b> The graph below which tackles the second subgoal, shows each country's CFR (in percentage), which is the ratio of confirmed deaths to confirmed cases, or the proportion of people diagnosed who die from the disease. The lines
+            are color coded by country, with the legend on the right side of the graph. To compare a particular country's CFR with that of USA, the undesired countries can be unselected by clicking on them in the legend.
+        </li>
+        <li><b>Sources:</b> The idea of calculating and showing the case fatality rate came from this
+            <a href="https://ourworldindata.org/coronavirus ">research report</a> by Our World In Data.
+        </li>
+        <li><b>Purpose:</b> It is assumed that countries with lower CFRs have more effective responses and treatment of diagnosed individuals with COVID-19. The line chart can be used to compare the countries' response to the treatment of infected persons.
+            In countries where health systems were unable to meet the increased demand for care, CFRs might increase. Although, it can't be determined whether the causes of increased CFR could be because deaths are high or because cases are low, and the
+            causes of decreased CFR is because deaths are low or cases are high.
+        </li>
+        <li><b>How Analysis:</b> The trend of constantly increasing case fatality rate, followed by a plateau in May 2020, following the discovery of different ways of managing the virus, until July 2020, after which there is a significant reduction in the
+            CFR across all countries, this is emphasized by the connecting lines.
+        </li>
+        <ul>
+            <li><b>Idiom:</b> Encode: Express CFR with aligned vertical position (date), and separate/order into horizontal regions by location/country.</li>
+            <li><b>Marks and Channels:</b> Point marks connected by Lines</li>
+            <li><b>Guidelines and Principles:</b> </li>
+        </ul>
     </ul>
     <h4>Viz 2</h4>
     <ul>
@@ -290,27 +316,45 @@
         <li><b>Description:</b> </li>
         <li><b>Sources:</b></li>
         <li><b>Purpose:</b></li>
+        <li><b>How Analysis:</b></li>
+        <ul>
+            <li><b>Idiom:</b></li>
+            <li><b>Marks and Channels:</b></li>
+            <li><b>Guidelines and Principles:</b></li>
+        </ul>
     </ul>
     <h4>Viz 3</h4>
     <ul>
         <li><b>Illustration:</b> Stringency Index versus Reproduction rate of covid-19 of each country.</li>
-        <div class="showcase__section" id="bubble">
-            <div class="spacer --small"></div>
-            <div id="bubbleplots">
-                <div class="bubbleplot" data-num="0">
-                    <div class="plot" id="plotdiv" style="width:100%; height:100%"></div>
-                    <div class="control-row">
-                        Country: <select class="countrydata">
+        <div class="showcase__section " id="bubble ">
+            <div class="spacer --small "></div>
+            <div id="bubbleplots ">
+                <div class="bubbleplot " data-num="0 ">
+                    <div class="plot " id="plotdiv " style="width:100%; height:100% "></div>
+                    <div class="control-row ">
+                        Country: <select class="countrydata ">
                         </select>
                     </div>
                 </div>
             </div>
         </div>
         <script type='text/javascript' src='stringency_Ro.js'></script>
-        <li><b>Description:</b> </li>
-        <li><b>Sources:</b></li>
+        &nbsp;
+        <li><b>Description:</b> This design ontains 2 Y-axes, to display both the stringency index and the reproduction rate of covid in each of the ten countries for easier comparison.</li>
+        <li><b>Sources:</b> Designing two variables on the same charts, using the same x-axis and different y-axis as inspired by
+            <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries.The code for the dropdown button for each country was copied and manipulated from the
+            <a href="https://plotly.com/javascript/dropdowns/#bind-dropdown-events-to-plotlyjs-charts "> bind dropdown events aspect</a> of the plotly.js graphing libraries.
+        </li>
         <li><b>Purpose:</b></li>
+        <li><b>How Analysis:</b></li>
+        <ul>
+            <li><b>Idiom:</b></li>
+            <li><b>Marks and Channels:</b></li>
+            <li><b>Guidelines and Principles:</b></li>
+        </ul>
     </ul>
+    <h3>Originality:</h3>
+    <h2>Conclusions</h2>
 </body>
 
 </html>
