@@ -36,9 +36,9 @@
         <li><b>Broad goal:</b> Provide visualizations to show how successful the U.S.A. has been in responding to the COVID-19 pandemic as compared to some other countries.</li>
         <li><b>Sub-goals:</b></li>
         <ol>
-            <li>Compare the number of tests performed per thousand people and per confirmed case by each country;</li>
+            <li>Compare the reproduction rates and number of tests performed per thousand people by each country;</li>
             <li>show the case fatality rate which is the ratio of total number of confirmed deaths and confirmed cases by country;</li>
-            <li>Show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 infection in each of the ten countries.</li>
+            <li>Show if increasingly strict measures, using the stringency index, affect the number of ocnfirmed cases of covid-19 in each of the ten countries.</li>
         </ol>
     </ul>
 
@@ -264,11 +264,11 @@
         <li>Search level: action/target is <b>browse trends</b>. The location is somewhat known, since we have values of the features, but the target is unknown. We are directed to find patterns, increases, decreases, majorly trends in the data observed.</li>
         <li>Query level: action/target is <b>summarize features</b>. The designs will summarize all the results accross all countries in order to determine the country with the best response to covid-19.</li>
     </ul>
-    <p>The first subgoal is to compare the number of tests performed per thousand people and per confirmed case by each country.</p>
+    <p>The first subgoal is to compare the number of tests performed per thousand people and reproduction rates by each country.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. The number of tests performed per thousand people and tests performed per confirmed case by a country will be presented.</li>
+        <li>Analyze level: action/target is <b>present features</b>. The number of tests performed per thousand people and reproduction rate of a country will be presented.</li>
         <li>Search level: action/target is <b>lookup trends</b>. Find the patterns of testing across the ten countries.</li>
-        <li>Query level: action/target is <b>identify distribution</b>. Identify the country with the highest or lowest tests per case and per thousand people.</li>
+        <li>Query level: action/target is <b>identify distributions</b>. Identify the country with the highest or lowest reproduction rates and tests per thousand people performed.</li>
     </ul>
     <p>The second subgoal is to show the case fatality rate which is the ratio of total number of confirmed deaths and confirmed cases by country.</p>
     <ul>
@@ -276,10 +276,10 @@
         <li>Search level: action/target is <b>lookup trends</b>. Find the patterns of covid-19 infection by the number of cases and deaths from the virus across the ten countries.</li>
         <li>Query level: action/target is <b>identify distributions</b>. Identify the country with the highest or lowest confirmed cases of covid-19 and confirmed deaths from the virus.</li>
     </ul>
-    <p>The third subgoal is to show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 infection in each of the ten countries.</p>
+    <p>The third subgoal is to show if increasingly strict measures, using the stringency index, affect the number of confirmed cases of covid-19 in each of the ten countries.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. Present a viz showing the stringency index and reproduction rate of covid-19 across all the countries.</li>
-        <li>Search level: action/target is <b>lookup correlations</b>. Find how the stringency index correlates with the reproduction rate</li>
+        <li>Analyze level: action/target is <b>present features</b>. Present a viz showing the stringency index and total confirmed cases of covid-19 across all the countries.</li>
+        <li>Search level: action/target is <b>lookup correlations</b>. Find how the stringency index correlates with the confirmed cases</li>
         <li>Query level: action/target is <b>compare similarities</b>. Compare how similar or how different the patterns of the correlations of the two variables across the countries</li>
     </ul>
     <h2>Design</h2>
@@ -287,23 +287,27 @@
     <p>The three visualization designs I want evaluated as part of my submission include:</p>
     <h4>Viz 1</h4>
     <ul>
-        <li><b>Illustration:</b> Total number of confirmed cases and the total number of tests performed per thousand people.</li>
+        <li><b>Illustration:</b> Reproduction Rate of covid-19 and the total number of tests performed per thousand people by country.</li>
         <p>
             <script src="https://d3js.org/d3.v4.js"></script>
-            <button onclick="update('total_cases_per_million')">Confirmed Cases Per Million</button>
+            <button onclick="update('reproduction_rate')">Reproduction Rate</button>
             <button onclick="update('total_tests_per_thousand')">Total Tests Per Thousand</button>
         </p>
         <div id="my_dataviz"></div>
         <script type='text/javascript' src='test_case.js'></script>
 
 
-        <li><b>Description:</b> The illustartion contains a bar chart w</li>
-        <li><b>Sources:</b></li>
-        <li><b>Purpose:</b></li>
-        <li><b>How Analysis:</b></li>
+        <li><b>Description:</b> The illustration contains a barplot that allows for smooth transition between variables. The buttons at the top of the viz, can be clicked on to view the rate at which a diagnosed person infects other people (reproduction rates,
+            Ro) and total tests performed to detect each infected person by each country. The Ro are sorted in descending order by countries.</li>
+        <li><b>Sources:</b> The
+            <a href="https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html">barplot section</a> of the d3 graph gallery, gave an insight on the design.
+        </li>
+        <li><b>Purpose: The design will allow for the comparison of the Ro and tests between countries. Since the graph has been sorted in descending order of Ro, we can assume that United Kingdom with the highest Ro, has a low number of tests performed that can help to identify cases and trace contacts, thereby reducing community transmission. </b></li>
+        <li><b>How Analysis:</b> Marks are ordered in descending order according to the reproduction rates and tests used for bar heights.</li>
         <ul>
-            <li><b>Idiom:</b></li>
-            <li><b>Marks and Channels:</b></li>
+            <li><b>Idiom:</b> The key attribute, location, separates the marks along the horizontal spatial axis. The value attributes, reproduction rates & total tests, express the value with aligned vertical spatial position and line marks.
+            </li>
+            <li><b>Marks and Channels:</b> Line marks</li>
             <li><b>Guidelines and Principles:</b></li>
         </ul>
     </ul>
@@ -313,8 +317,10 @@
         <li><b>Illustration:</b> Case Fatality Ratio (CFR) of confirmed deaths to cases from covid-19.</li>
         <div id="myDiv3" style="width:90%; height:100%"></div>
         <script type='text/javascript' src='cfr.js'></script>
+        &nbsp;
         <li><b>Description:</b> The graph below which tackles the second subgoal, shows each country's CFR (in percentage), which is the ratio of confirmed deaths to confirmed cases, or the proportion of people diagnosed who die from the disease. The lines
-            are color coded by country, with the legend on the right side of the graph. To compare a particular country's CFR with that of USA, the undesired countries can be unselected by clicking on them in the legend.
+            are color coded by country, with the legend on the right side of the graph. The green line indicates a crucial point where Reproduction rate (Ro) is 0.98, a point where casesTo compare a particular country's CFR with that of USA, the undesired
+            countries can be unselected by clicking on them in the legend.
         </li>
         <li><b>Sources:</b> The idea of calculating and showing the case fatality rate came from this
             <a href="https://ourworldindata.org/coronavirus ">research report</a> by Our World In Data.
@@ -334,12 +340,12 @@
     </ul>
     <h4>Viz 3</h4>
     <ul>
-        <li><b>Illustration:</b> Stringency Index versus Reproduction rate of covid-19 of each country.</li>
+        <li><b>Illustration:</b> Stringency Index versus Confirmed total cases of covid-19 by country.</li>
         <div class="showcase__section" id="bubble">
             <div class="spacer --small"></div>
             <div id="bubbleplots">
                 <div class="bubbleplot" data-num="0">
-                    <div class="plot" id="plotdiv" style="width:100%; height:100% "></div>
+                    <div class="plot" id="plotdiv" style="width:90%; height:100% "></div>
                     <div class="control-row">
                         Country: <select class="countrydata">
                         </select>
@@ -349,22 +355,28 @@
         </div>
         <script type='text/javascript' src='stringency_Ro.js'></script>
         &nbsp;
-        <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the reproduction rate of covid in each of the ten countries for easier comparison. The graph shows 2 lines of different colors, and has a dropdown button
-            below it to select whatever country we will like to compare.</li>
+        <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the total cases of covid in each of the ten countries for easier comparison. The graph shows 2 lines of different colors, and has a dropdown button below
+            it to select whatever country we will like to compare.</li>
         <li><b>Sources:</b> Designing two variables on the same charts, using the same x-axis and different y-axis as inspired by
-            <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries.The code for the dropdown button for each country was copied and manipulated from the
+            <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries.The code for the dropdown button for each country was taken and manipulated from the
             <a href="https://plotly.com/javascript/dropdowns/#bind-dropdown-events-to-plotlyjs-charts "> bind dropdown events aspect</a> of the plotly.js graphing libraries.
         </li>
-        <li><b>Purpose:</b>The graph is used to determine the relationship between the stricter measures (stringency index) and the rate at which a diagnosed person infects other people (reproduction rate).</li>
-        <li><b>How Analysis:</b></li>
+        <li><b>Purpose:</b>The graph can be used to determine the relationship between the stricter measures (stringency index) and the total number of confirmed cases in a country.</li>
+        <li><b>How Analysis:</b> The graph provides a clear picture when comparing the United States to the nine other countries with high development index. It is obvious that as the number of cases increased, so does the Stringency Index. Intuitively, this
+            makes sense; as coronavirus picked up in a country, so did the protective laws and policies to mitigate its spread. Once the measures were getting eased, a second wave of new infections started to happen.</li>
         <ul>
-            <li><b>Idiom:</b></li>
-            <li><b>Marks and Channels:</b></li>
+            <li><b>Idiom:</b> Encode: Express stringency index and total cases with aligned vertical position (date), and separate/order into horizontal regions by location/country.</li>
+            <li><b>Marks and Channels:</b> Point marks connected by Lines</li>
             <li><b>Guidelines and Principles:</b></li>
         </ul>
     </ul>
     <h3>Originality:</h3>
     <h2>Conclusions</h2>
+    <ul>
+        <li><b>Outcome:</b></li>
+        <li><b>Suggestions:</b></li>
+        <li><b>Reflections:</b></li>
+    </ul>
 </body>
 
 </html>

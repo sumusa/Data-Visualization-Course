@@ -97,7 +97,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
         title: 'Case Fatality Rate of each country',
         xaxis: {
             title: {
-                text: 'Date'
+                text: 'Date of observation'
             }
         },
         yaxis: {
@@ -108,7 +108,12 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
     };
     var data = [BelgiumCFR, CanadaCFR, DenmarkCFR, FinlandCFR, NetherlandsCFR, NZCFR, SingaporeCFR, SwedenCFR, UKCFR, USACFR];
 
-    var config = { responsive: true }
+    var config = {
+        displayModeBar: true,
+        doubleClickDelay: 1000,
+        scrollZoom: true,
+        responsive: true
+    };
 
-    Plotly.newPlot('myDiv3', data, layout)
+    Plotly.newPlot('myDiv3', data, layout, config)
 })
