@@ -6,7 +6,6 @@
     <title>Final Project Submission</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
     <style>
         .control-row {
             text-align: center;
@@ -289,7 +288,7 @@
     <h4>Viz 1</h4>
     <ul>
         <li><b>Illustration:</b> Case Fatality Ratio (CFR) of confirmed deaths to cases from covid-19.</li>
-        <div id="myDiv3 " style="width:90%; height:100% "></div>
+        <div id="myDiv3" style="width:90%; height:100%"></div>
         <script type='text/javascript' src='cfr.js'></script>
         <li><b>Description:</b> The graph below which tackles the second subgoal, shows each country's CFR (in percentage), which is the ratio of confirmed deaths to confirmed cases, or the proportion of people diagnosed who die from the disease. The lines
             are color coded by country, with the legend on the right side of the graph. To compare a particular country's CFR with that of USA, the undesired countries can be unselected by clicking on them in the legend.
@@ -301,8 +300,8 @@
             In countries where health systems were unable to meet the increased demand for care, CFRs might increase. Although, it can't be determined whether the causes of increased CFR could be because deaths are high or because cases are low, and the
             causes of decreased CFR is because deaths are low or cases are high.
         </li>
-        <li><b>How Analysis:</b> The trend of constantly increasing case fatality rate, followed by a plateau in May 2020, following the discovery of different ways of managing the virus, until July 2020, after which there is a significant reduction in the
-            CFR across all countries, this is emphasized by the connecting lines.
+        <li><b>How Analysis:</b> The trend of constantly increasing case fatality rate is shown, followed by a plateau in May 2020, secondary to the discovery of different ways of managing the virus, until July 2020, after which there is a significant reduction
+            in the CFR across all countries, this is emphasized by the connecting lines.
         </li>
         <ul>
             <li><b>Idiom:</b> Encode: Express CFR with aligned vertical position (date), and separate/order into horizontal regions by location/country.</li>
@@ -313,6 +312,11 @@
     <h4>Viz 2</h4>
     <ul>
         <li><b>Illustration:</b></li>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <div id="my_dataviz"></div>
+        <script type='text/javascript' src='test_case.js'></script>
+
+
         <li><b>Description:</b> </li>
         <li><b>Sources:</b></li>
         <li><b>Purpose:</b></li>
@@ -326,13 +330,13 @@
     <h4>Viz 3</h4>
     <ul>
         <li><b>Illustration:</b> Stringency Index versus Reproduction rate of covid-19 of each country.</li>
-        <div class="showcase__section " id="bubble ">
-            <div class="spacer --small "></div>
-            <div id="bubbleplots ">
-                <div class="bubbleplot " data-num="0 ">
-                    <div class="plot " id="plotdiv " style="width:100%; height:100% "></div>
-                    <div class="control-row ">
-                        Country: <select class="countrydata ">
+        <div class="showcase__section" id="bubble">
+            <div class="spacer --small"></div>
+            <div id="bubbleplots">
+                <div class="bubbleplot" data-num="0">
+                    <div class="plot" id="plotdiv" style="width:100%; height:100% "></div>
+                    <div class="control-row">
+                        Country: <select class="countrydata">
                         </select>
                     </div>
                 </div>
@@ -340,12 +344,13 @@
         </div>
         <script type='text/javascript' src='stringency_Ro.js'></script>
         &nbsp;
-        <li><b>Description:</b> This design ontains 2 Y-axes, to display both the stringency index and the reproduction rate of covid in each of the ten countries for easier comparison.</li>
+        <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the reproduction rate of covid in each of the ten countries for easier comparison. The graph shows 2 lines of different colors, and has a dropdown button
+            below it to select whatever country we will like to compare.</li>
         <li><b>Sources:</b> Designing two variables on the same charts, using the same x-axis and different y-axis as inspired by
             <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries.The code for the dropdown button for each country was copied and manipulated from the
             <a href="https://plotly.com/javascript/dropdowns/#bind-dropdown-events-to-plotlyjs-charts "> bind dropdown events aspect</a> of the plotly.js graphing libraries.
         </li>
-        <li><b>Purpose:</b></li>
+        <li><b>Purpose:</b>The graph is used to determine the relationship between the stricter measures (stringency index) and the rate at which a diagnosed person infects other people (reproduction rate).</li>
         <li><b>How Analysis:</b></li>
         <ul>
             <li><b>Idiom:</b></li>

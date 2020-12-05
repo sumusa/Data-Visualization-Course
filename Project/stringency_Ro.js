@@ -42,20 +42,19 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
             x: currentDate,
             y: currentStringency,
             mode: 'lines+markers',
+            connectgaps: true,
             marker: {
                 size: 5,
                 opacity: 0.5
             },
             name: 'Stringency Index',
-            line: {
-                shape: 'spline'
-            }
         };
 
         var trace2 = {
             x: currentDate,
             y: currentRo,
             mode: 'lines+markers',
+            connectgaps: true,
             marker: {
                 size: 5,
                 opacity: 0.5
@@ -79,7 +78,6 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
                 overlaying: 'y',
                 side: 'right',
             },
-            plot_bgcolor: '#c7c7c7'
         };
 
         Plotly.newPlot('plotdiv', data, layout);
