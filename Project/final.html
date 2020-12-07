@@ -16,6 +16,11 @@
             text-align: center;
             color: brown;
         }
+        
+        .countrydata2 {
+            text-align: center;
+            color: brown;
+        }
     </style>
 </head>
 
@@ -292,8 +297,8 @@
         <li><b>Illustration:</b> The total number of cases and the total number of tests performed per thousand people by country.</li>
         <p>
             <script src="https://d3js.org/d3.v4.js"></script>
-            <button onclick="update('total_cases_per_million')">Total Cases Per Million</button>
-            <button onclick="update('total_tests_per_thousand')">Total Tests Per Thousand</button>
+            <button onclick="update('total_cases')">Total Cases</button>
+            <button onclick="update('total_tests')">Total Tests</button>
         </p>
         <div id="my_dataviz"></div>
         <script type='text/javascript' src='test_case.js'></script>
@@ -304,7 +309,9 @@
         <li><b>Sources:</b> The
             <a href="https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html">barplot section</a> of the d3 graph gallery, gave an insight on the design.
         </li>
-        <li><b>Purpose: The design will allow for the comparison of the cases and tests between countries. Since the graph has been sorted in descending order of Ro, we can determine the country with the highest and lowest number of cases, and the corresponding number of tests performed to identify the cases and trace contacts, thereby reducing community transmission. </b></li>
+        <li><b>Purpose:</b> The design will allow for the comparison of the cases and tests between countries. Since the graph has been sorted in descending order of number of cases, we can determine the country with the highest and lowest number of cases,
+            and the corresponding number of tests performed to identify the cases and trace contacts, thereby reducing community transmission.
+        </li>
         <li><b>How Analysis:</b> Marks are ordered in descending order according to the reproduction rates and tests used for bar heights.</li>
         <ul>
             <li><b>Idiom:</b> The key attribute, location, separates the marks along the horizontal spatial axis. The value attributes, reproduction rates & total tests, express the value with aligned vertical spatial position and line marks.
@@ -343,20 +350,43 @@
     </ul>
     <h4>Viz 3</h4>
     <ul>
-        <li><b>Illustration:</b> Stringency Index versus Confirmed total cases of covid-19 by country.</li>
-        <div class="showcase__section" id="bubble">
-            <div class="spacer --small"></div>
-            <div id="bubbleplots">
-                <div class="bubbleplot" data-num="0">
-                    <div class="plot" id="plotdiv" style="width:90%; height:100% "></div>
-                    <div class="control-row">
-                        Country: <select class="countrydata">
-                        </select>
+        <li><b>Illustration:</b> Stringency Index versus Reproduction rate of covid-19 by country.</li>
+
+        <table class="columns">
+            <tr>
+                <td>
+                    <script type='text/javascript' src='stringency_Ro.js'></script>
+                    <div class="showcase__section" id="bubble">
+                        <div class="spacer --small"></div>
+                        <div id="bubbleplots">
+                            <div class="bubbleplot" data-num="0">
+                                <div class="plot" id="plotdiv"></div>
+                                <div class="control-row">
+                                    Country: <select class="countrydata">
+                            </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <script type='text/javascript' src='stringency_Ro.js'></script>
+                </td>
+
+                <td>
+                    <script type='text/javascript' src='stringency_Ro.js'></script>
+                    <div class="showcase__section" id="bubble">
+                        <div class="spacer --small"></div>
+                        <div id="bubbleplots">
+                            <div class="bubbleplot" data-num="1">
+                                <div class="plot" id="plotdiv2"></div>
+                                <div class="control-row">
+                                    Country: <select class="countrydata2">
+                            </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
         &nbsp;
         <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the reproduction rates of covid in each of the ten countries for easier comparison. The graph shows 3 lines of different colors, 2 of the lines represent
             each attribute, while the third line (green) shows the level at which the reproduction number is 1. A reproduction number that is slightly over 1, can lead quickly to a large number of cases, as the UK Government explained in
