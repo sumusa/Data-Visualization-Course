@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Work</title>
+</head>
+
+<body>
+    <h1>Client Work Submission</h1>
+    <strong>NAME: </strong> SUMAYYAH MUSA (sbmusa)<br>
+    <strong>COURSE: </strong>COMP 6774<br>
+    <strong>CLIENT NAME: </strong> Dr. Daniel Fuller <br>
+
+    <h2>Attributions</h2>
+    <p>I attest that this submission was done by me (Sumayyah Musa).</p>
+    <ul>
+        <li>Data source: <a href="https://transitfeeds.com/p/metrobus-transit/293" class="href">Metrobus GTFS Data</a></li>
+        <li>Material: <a href="https://dzone.com/articles/gtfs-transit-data-visualization-in-r" class="href">GTFS Transit Data Visualisation,</a> <a href="https://developers.google.com/transit/gtfs/reference#stopstxt">GTFS Dataset Reference</a></li>
+    </ul>
+
+    <h2>Client Interaction and Information</h2>
+    <ul>
+        <li><b>Communication:</b> Communicated via Slack at least twice a week and I get swift and positive feedbacks</li>
+        <li><b>Client Materials:</b> <a href="https://towardsdatascience.com/r-for-gtfs-getting-the-number-of-trips-per-hour-for-each-line-4d22491e3944">R for GTFS,</a>
+            <a href="https://transitfeeds.com/p/metrobus-transit/293" class="href">Metrobus GTFS Data,</a>
+            <a href="https://dzone.com/articles/gtfs-transit-data-visualization-in-r" class="href">GTFS Transit Data Visualisation</a></li>
+        <li><b>Client Instructions: </b>I would like to create a map of the GTFS data for St. John’s showing changes over time due to COVID. </li>
+        <li><b>Client Product: </b><a href="submission.html">submission.html,</a>and <a href="submission-1.r" class="href">submission-1.r</a></li>
+    </ul>
+
+    <h2>Methods and Design</h2>
+    <ul>
+        <li><b>Domain: </b> Google Transit Feed Specification (GTFS) Data was used to show the changes in St. John's Metrobus Transit due to COVID from 20th of March, 2020 to 13th of September, 2020</li>
+        <li><b>Wrangling: </b>Data set did not require wrangling</li>
+    </ul>
+
+    <h3>What Analysis</h3>
+    <h4>
+        agency.txt:
+    </h4>
+    This dataset <b>defines</b> transit agencies with service represented in this dataset.
+    <ul>
+        <li>agency_id identifies a transit brandwhich is often synonymous with a transit agency.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>agency_name is the full name of the transit agency.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>agency_url is the url of the transit agency.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>agency_timezone is the timezone where the transit agency is located.
+            <ul>
+                <li><b>What:</b>Categorical - a region of time.</li>
+            </ul>
+        </li>
+        <li>agency_phone is a voice telephone number for the specified agency.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>agency_fare_url is the URL of a web page that allows a rider to purchase tickets or other fare instruments for that agency online.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>agency_email is the email address actively monitored by the agency’s customer service department.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>
+        shapes.txt:
+    </h4>
+    This dataset is a <b>table</b> dataset that describe the rules for mapping vehicle travel paths, sometimes referred to as route alignments.
+    <ul>
+        <li>shape_id identifies a shape.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>shape_pt_lat is the latitude of a shape point.
+            <ul>
+                <li><b>What:</b>Categorcal - represents a point in space.</li>
+            </ul>
+        </li>
+        <li>shape_pt_lon is the longitude of a shape point.
+            <ul>
+                <li><b>What:</b>Categorical - represents a point in space.</li>
+            </ul>
+        </li>
+        <li>shape_pt_sequence is the sequence in which the shape points connect to form the shape.
+            <ul>
+                <li><b>What:</b>Ordinal</li>
+            </ul>
+        </li>
+        <li>shape_dist_traveled is the actual distance traveled along the shape from the first shape point to the point specified in this record.
+            <ul>
+                <li><b>What:</b>Ordered, ordinal</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>
+        stops.txt:
+    </h4>
+    This dataset <b>defines</b> where vehicles pick up or drop off riders. Also defines stations and station entrances.
+    <ul>
+        <li>stop_id identifies a stop, station, or station entrance.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>stop_code is a short text or a number that identifies the location for riders.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>stop_name is the name of the location. Use a name that people will understand in the local and tourist vernacular.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>stop_desc is description of the location that provides useful, quality information.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>stop_lat is the latitude of a location.
+            <ul>
+                <li><b>What:</b>Geometry - Latitude</li>
+            </ul>
+        </li>
+        <li>stop_lon is the longitude of a location.
+            <ul>
+                <li><b>What:</b>Geometry - Longitude</li>
+            </ul>
+        </li>
+        <li>zone_id identifies the fare zone for a stop.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>stop_url is the URL of a web page about the location.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>location_type is type of location.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>parent_station defines hierarchy between the different locations defined in stops.txt.
+            <ul>
+                <li><b>What:</b>Hierarchial - It contains the ID of the parent location (location_type)</li>
+            </ul>
+        </li>
+        <li>stop_timezone is the timezone of the location.
+            <ul>
+                <li><b>What:</b>Geometry - region of the agency</li>
+            </ul>
+        </li>
+        <li>wheelchair_boarding indicates whether wheelchair boardings are possible from the location.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>
+        routes.txt:
+    </h4>
+    This dataset <b>shows</b> transit routes. A route is a group of trips that are displayed to riders as a single service.
+    <ul>
+        <li>route_id Identifies a route.
+            <ul>
+                <li><b>What:</b>Ordered, quantitative</li>
+            </ul>
+        </li>
+        <li>agency_id is the agency for the specified route.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_short_name is the short name of a route.
+            <ul>
+                <li><b>What:</b>Ordered, quantitative</li>
+            </ul>
+        </li>
+        <li>route_long_name is the full name of a route.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_desc is the description of a route that provides useful, quality information.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_type indicates the type of transportation used on a route.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_url is the URL of a web page about the particular route.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_color is the designation that matches public facing material.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+        <li>route_text_color is the legible color to use for text drawn against a background of route_color.
+            <ul>
+                <li><b>What:</b>Categorical</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Goals</h3>
+    <ol>
+        <li>To create a map of the bus route for ST John's showing changes overtine due ot COVID</li>
+        <li>Show the stops based on trip frequency </li>
+    </ol>
+
+    <h3>Why Analysis</h3>
+    <ul>
+        <li>Derive level: action/target is "create a map".In trying to understand the effect of COVID, there is a need to study frequency of trips over time.</li>
+        <li>Identify level: action/target is "show the stops". Since we are working with transit map, it will be helpful to have most-frequent and less-frequent stops visible</li>
+    </ul>
+
+    <h3>Designs</h3>
+    <h4>Design 1</h4>
+    <ul>
+        <li><b>Illustration: </b>Zoom</li>
+        <li><b>Descripton: </b>Product map can be zoomed in and out</li>
+        <li><b>Purpose: </b>To view the stops more clearly</li>
+    </ul>
+
+    <h4>Design 2</h4>
+    <ul>
+        <li><b>Illustration: </b>Route</li>
+        <li><b>Descripton: </b>Purple lines showing bus routes in ST. John's. Routes are labelled and pop-up enabled</li>
+        <li><b>Purpose: </b>To display bus routes</li>
+    </ul>
+
+    <h4>Design 3</h4>
+    <ul>
+        <li><b>Illustration: </b>Stops Weighting by Frequency</li>
+        <li><b>Descripton: </b>Size of circle markers varies according to trip frequency, stops are labelled and also pop-up enabled</li>
+        <li><b>Purpose: </b>To detech most frequent and less frequent stops</li>
+    </ul>
+
+    <h3>How Analysis</h3>
+
+    <h2>Implementation</h2>
+    <ul>
+        <li><b>Access: </b><a href="submission.html">submission.html,</a>and <a href="submission-1.r" class="href">submission-1.r</a></li>
+        <li><b>Source that influenced code: </b> <a href="https://www.r-bloggers.com/2014/10/plotting-gtfs-data-with-r-2/">Plotting GTFS Data with R</a></li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <ul>
+        <li><b>Outcome: </b> Produt map shows routes, stops and can be zoomed. However, routes beyond the 3000th row couldn't be previewed. Possible guess, this action requires an even more higher computing RAM PC (I use a 12GB RAM Core i7 PC)</li>
+        <li><b>Suggestions: </b>Data sets should be gathered monthly, so monthly differences can be tracked.</li>
+        <li><b>Reflection: </b>The Muntzer approach helped in understanding the data sets and how to approch visualisation.</li>
+    </ul>
+
+</body>
+
+</html>

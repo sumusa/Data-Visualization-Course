@@ -25,16 +25,15 @@ var y = d3.scaleLinear()
 var yAxis = svg.append("g")
     .attr("class", "myYaxis")
 
-
 // A function that create / update the plot for a given variable:
-function update(reproduction_rate) {
+function update(total_cases_per_million) {
 
     // Parse the Data
     d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Course/master/Project/covid-data.csv", function(data) {
 
         // sort data
         data.sort(function(b, a) {
-            return a.reproduction_rate - b.reproduction_rate;
+            return a.total_cases_per_million - b.total_cases_per_million;
         });
 
         // X axis
@@ -42,7 +41,7 @@ function update(reproduction_rate) {
         xAxis.transition().duration(1000).call(d3.axisBottom(x))
 
         // Add Y axis
-        y.domain([0, d3.max(data, function(d) { return +d[reproduction_rate] })]);
+        y.domain([0, d3.max(data, function(d) { return +d[total_cases_per_million] })]);
         yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
         // variable u: map data to existing bars
@@ -57,14 +56,13 @@ function update(reproduction_rate) {
             .transition()
             .duration(1000)
             .attr("x", function(d) { return x(d.location); })
-            .attr("y", function(d) { return y(d[reproduction_rate]); })
+            .attr("y", function(d) { return y(d[total_cases_per_million]); })
             .attr("width", x.bandwidth())
-            .attr("height", function(d) { return height - y(d[reproduction_rate]); })
+            .attr("height", function(d) { return height - y(d[total_cases_per_million]); })
             .attr("fill", "#69b3a2")
-
     })
 
 }
 
 // Initialize plot
-update('reproduction_rate')
+update('total_cases_per_million')

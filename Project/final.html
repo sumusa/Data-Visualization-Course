@@ -25,7 +25,8 @@
 
     <h2>Attribution</h2>
     <p>
-
+        I attest that while this submission is of my independent work, I used some resources outside the class materials, and the sources that were not solely mine, have been indicated in the different aspects of the submission. I also attest that my Graduate
+        Supervisor, Dr.Fuller, reviewed the project, and made some corrections before submission.
     </p>
 
     <h2>Problem Description and Objectives</h2>
@@ -80,17 +81,18 @@
                     to the pandemic;</li>
                 <li>adding a new column called
                     <a href="https://en.wikipedia.org/wiki/Infection_rate ">infection rate</a>, to determine the frequency of occurrence of new covid cases for particular days. The percentage was calculated by dividing the number of cases by population,
-                    and multipplying by 100, for a particular day.
+                    and multiplying by 100, for a particular day.
                 </li>
                 <li>exporting the
                     <a href="covid-data.csv ">cleaned and preprocessed data</a>, which now contains 37 columns and 3132 rows, into <a href="https://en.wikipedia.org/wiki/Comma-separated_values ">csv</a> format for use in Plotly.js and D3.js.</li>
             </ul>
             The preprocessing jupyter notebook was converted to HTML file for easy access and it can be viewed
-            <a href="covid-data-wrangling.html ">here</a>
+            <a href="covid-data-wrangling.html">here.</a> It took approximately 12 hours across 4 days to preprocess the data.
         </li>
 
-        <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> and <b>field</b> dataset representing the number of confirmed covid cases, deaths, new cases, tests, reproductive rate, of ten countries, including United States. each variable
-        were measured daily, and can be interpolated to calculate more variables that are relevant to the stated objectives. The dataset availability is <b>dynamic</b>, in that new items are added daily.
+        <li><b>What Analysis:</b></li> The dataset is principally a <b>table</b> and <b>Geometry</b> dataset representing the number of confirmed covid cases, deaths, new cases, tests, reproductive rate, by
+        <b>countries</b> , including United States. The variable were measured daily, and can be interpolated to calculate more variables that are relevant to the stated objectives. The dataset availability is <b>dynamic</b>, in that new items are added
+        daily.
         <ul>
             <li>
                 Iso_code:
@@ -114,7 +116,7 @@
             <li>
                 Date: Day of the month, month and year of observation,
                 <ul>
-                    <li><b>What:</b> Quantitative, sequential, hierarchical</li>
+                    <li><b>What:</b> Ordinal - there is a kind of ordering to the days.</li>
                 </ul>
             </li>
             <li>
@@ -192,7 +194,7 @@
             <li>
                 Reproduction_rate: Real-time estimate of the effective reproduction rate (R) of covid-19, which is a way of rating coronavirus or any disease's ability to spread, or the number of people that one infected person will pass on a virus to, on average.
                 <ul>
-                    <li><b>What:</b> Ordinal and sequential</li>
+                    <li><b>What:</b> Ordinal</li>
                 </ul>
             </li>
             <li>
@@ -228,7 +230,7 @@
             <li>
                 Stringency_index: Government Response Stringency Index - a composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)
                 <ul>
-                    <li><b>What:</b> Ordinal and sequential</li>
+                    <li><b>What:</b> Quantitative</li>
                 </ul>
             </li>
             <li>
@@ -240,19 +242,19 @@
             <li>
                 Life_expectancy: a statistical measure of the average time a person is expected to live, based on the year of birth, in 2019
                 <ul>
-                    <li><b>What:</b> Quantitative and sequential</li>
+                    <li><b>What:</b> Quantitative</li>
                 </ul>
             </li>
             <li>
                 Human_development_index: Summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and have a decent standard of living
                 <ul>
-                    <li><b>What:</b> Ordinal and sequential</li>
+                    <li><b>What:</b> Ordinal</li>
                 </ul>
             </li>
             <li>
                 Case_fatality_rate: The proportion of people who die from covid-19 among all individuals diagnosed with the disease over a certain period of time. It is used to measure disease severity and also to evaluate the effect of treatment.
                 <ul>
-                    <li><b>What:</b> Quantitative, Ordinal and sequential</li>
+                    <li><b>What:</b> Quantitative</li>
                 </ul>
             </li>
         </ul>
@@ -276,10 +278,10 @@
         <li>Search level: action/target is <b>lookup trends</b>. Find the patterns of covid-19 infection by the number of cases and deaths from the virus across the ten countries.</li>
         <li>Query level: action/target is <b>identify distributions</b>. Identify the country with the highest or lowest confirmed cases of covid-19 and confirmed deaths from the virus.</li>
     </ul>
-    <p>The third subgoal is to show if increasingly strict measures, using the stringency index, affect the number of confirmed cases of covid-19 in each of the ten countries.</p>
+    <p>The third subgoal is to show if increasingly strict measures, using the stringency index, affect the reproduction rate of covid-19 in each of the ten countries.</p>
     <ul>
-        <li>Analyze level: action/target is <b>present features</b>. Present a viz showing the stringency index and total confirmed cases of covid-19 across all the countries.</li>
-        <li>Search level: action/target is <b>lookup correlations</b>. Find how the stringency index correlates with the confirmed cases</li>
+        <li>Analyze level: action/target is <b>present features</b>. Present a viz showing the stringency index and the reproduction rate of covid-19 across all the countries.</li>
+        <li>Search level: action/target is <b>lookup correlations</b>. Find how the stringency index correlates with the reproduction rate.</li>
         <li>Query level: action/target is <b>compare similarities</b>. Compare how similar or how different the patterns of the correlations of the two variables across the countries</li>
     </ul>
     <h2>Design</h2>
@@ -287,27 +289,27 @@
     <p>The three visualization designs I want evaluated as part of my submission include:</p>
     <h4>Viz 1</h4>
     <ul>
-        <li><b>Illustration:</b> Reproduction Rate of covid-19 and the total number of tests performed per thousand people by country.</li>
+        <li><b>Illustration:</b> The total number of cases and the total number of tests performed per thousand people by country.</li>
         <p>
             <script src="https://d3js.org/d3.v4.js"></script>
-            <button onclick="update('reproduction_rate')">Reproduction Rate</button>
+            <button onclick="update('total_cases_per_million')">Total Cases Per Million</button>
             <button onclick="update('total_tests_per_thousand')">Total Tests Per Thousand</button>
         </p>
         <div id="my_dataviz"></div>
         <script type='text/javascript' src='test_case.js'></script>
 
 
-        <li><b>Description:</b> The illustration contains a barplot that allows for smooth transition between variables. The buttons at the top of the viz, can be clicked on to view the rate at which a diagnosed person infects other people (reproduction rates,
-            Ro) and total tests performed to detect each infected person by each country. The Ro are sorted in descending order by countries.</li>
+        <li><b>Description:</b> The illustration uses d3js to create a barplot that allows for smooth transition between the two attributes. The buttons at the top of the viz, can be clicked on to view the total number of confirmed cases and the total tests
+            performed to detect each infected person by each country. The confirmed cases are sorted in descending order by countries.</li>
         <li><b>Sources:</b> The
             <a href="https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html">barplot section</a> of the d3 graph gallery, gave an insight on the design.
         </li>
-        <li><b>Purpose: The design will allow for the comparison of the Ro and tests between countries. Since the graph has been sorted in descending order of Ro, we can assume that United Kingdom with the highest Ro, has a low number of tests performed that can help to identify cases and trace contacts, thereby reducing community transmission. </b></li>
+        <li><b>Purpose: The design will allow for the comparison of the cases and tests between countries. Since the graph has been sorted in descending order of Ro, we can determine the country with the highest and lowest number of cases, and the corresponding number of tests performed to identify the cases and trace contacts, thereby reducing community transmission. </b></li>
         <li><b>How Analysis:</b> Marks are ordered in descending order according to the reproduction rates and tests used for bar heights.</li>
         <ul>
             <li><b>Idiom:</b> The key attribute, location, separates the marks along the horizontal spatial axis. The value attributes, reproduction rates & total tests, express the value with aligned vertical spatial position and line marks.
             </li>
-            <li><b>Marks and Channels:</b> Line marks</li>
+            <li><b>Marks and Channels:</b> The graph uses <b>lines</b> as marks, <b>X position</b> channel to represent countries, and <b>Area</b> channel to represent the quantitative attributes (total cases and total tests performed).</li>
             <li><b>Guidelines and Principles:</b></li>
         </ul>
     </ul>
@@ -318,9 +320,8 @@
         <div id="myDiv3" style="width:90%; height:100%"></div>
         <script type='text/javascript' src='cfr.js'></script>
         &nbsp;
-        <li><b>Description:</b> The graph below which tackles the second subgoal, shows each country's CFR (in percentage), which is the ratio of confirmed deaths to confirmed cases, or the proportion of people diagnosed who die from the disease. The lines
-            are color coded by country, with the legend on the right side of the graph. The green line indicates a crucial point where Reproduction rate (Ro) is 0.98, a point where casesTo compare a particular country's CFR with that of USA, the undesired
-            countries can be unselected by clicking on them in the legend.
+        <li><b>Description:</b> The graph shows each country's CFR (in percentage), which is the ratio of confirmed deaths to confirmed cases, or the proportion of people diagnosed who die from the disease. The lines are color coded by country, with the legend
+            on the right side of the graph. To compare a particular country's CFR with that of USA, the undesired countries can be unselected by clicking on them in the legend.
         </li>
         <li><b>Sources:</b> The idea of calculating and showing the case fatality rate came from this
             <a href="https://ourworldindata.org/coronavirus ">research report</a> by Our World In Data.
@@ -334,7 +335,8 @@
         </li>
         <ul>
             <li><b>Idiom:</b> Encode: Express CFR with aligned vertical position (date), and separate/order into horizontal regions by location/country.</li>
-            <li><b>Marks and Channels:</b> Point marks connected by Lines</li>
+            <li><b>Marks and Channels:</b> The design uses <b>lines</b> as marks. The <b>X and Y position</b> channel is used to encode the quantitative attribute (CFR), and the <b>Color (hue)</b> channel is used to encode the categorical attributes i.e countries.
+            </li>
             <li><b>Guidelines and Principles:</b> </li>
         </ul>
     </ul>
@@ -355,27 +357,32 @@
         </div>
         <script type='text/javascript' src='stringency_Ro.js'></script>
         &nbsp;
-        <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the total cases of covid in each of the ten countries for easier comparison. The graph shows 2 lines of different colors, and has a dropdown button below
-            it to select whatever country we will like to compare.</li>
-        <li><b>Sources:</b> Designing two variables on the same charts, using the same x-axis and different y-axis as inspired by
-            <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries.The code for the dropdown button for each country was taken and manipulated from the
+        <li><b>Description:</b> This design has two Y-axes, to display both the stringency index and the reproduction rates of covid in each of the ten countries for easier comparison. The graph shows 3 lines of different colors, 2 of the lines represent
+            each attribute, while the third line (green) shows the level at which the reproduction number is 1. A reproduction number that is slightly over 1, can lead quickly to a large number of cases, as the UK Government explained in
+            <a href="https://www.facebook.com/watch/live/?v=678737192960124&ref=watch_permalink"> this video</a>. The graph has a dropdown button below it to select whatever country we will like to compare.</li>
+        <li><b>Sources:</b> Designing two variables on the same charts, using the same x-axis and different y-axis was inspired by
+            <a href="https://plotly.com/javascript/multiple-axes/#two-yaxes ">this aspect</a> of the Plotly javascript graphing libraries. The code for the dropdown button for each country was taken and manipulated from the
             <a href="https://plotly.com/javascript/dropdowns/#bind-dropdown-events-to-plotlyjs-charts "> bind dropdown events aspect</a> of the plotly.js graphing libraries.
         </li>
-        <li><b>Purpose:</b>The graph can be used to determine the relationship between the stricter measures (stringency index) and the total number of confirmed cases in a country.</li>
-        <li><b>How Analysis:</b> The graph provides a clear picture when comparing the United States to the nine other countries with high development index. It is obvious that as the number of cases increased, so does the Stringency Index. Intuitively, this
-            makes sense; as coronavirus picked up in a country, so did the protective laws and policies to mitigate its spread. Once the measures were getting eased, a second wave of new infections started to happen.</li>
+        <li><b>Purpose:</b>The graph can be used to determine the relationship between the stricter measures (stringency index) and the reproduction number, which signifies the average number of people that one infected person will pass the virus to, in a
+            country.
+        </li>
+        <li><b>How Analysis:</b> The graph provides a clear picture when comparing the United States to the nine other countries with high development index. It is obvious that as the reproduction rate increased, so does the Stringency Index. Intuitively,
+            this makes sense; as coronavirus picked up in a country, so did the protective laws and policies to mitigate its spread. Once the measures were getting eased overtime, the reproduction rates consequently increased.</li>
         <ul>
             <li><b>Idiom:</b> Encode: Express stringency index and total cases with aligned vertical position (date), and separate/order into horizontal regions by location/country.</li>
-            <li><b>Marks and Channels:</b> Point marks connected by Lines</li>
+            <li><b>Marks and Channels:</b> The design uses <b>Points</b> connected by <b>Lines</b> as marks. <b>X and Y position</b> channels are used to represent the date and values, while the <b>Color (hue)</b> channel is used to represent each attribute.</li>
             <li><b>Guidelines and Principles:</b></li>
         </ul>
     </ul>
     <h3>Originality:</h3>
+    <p>for the first design, I tried sorting the bar chart from the highest to the lowest for the two variables, as the dataset gets updated when the second variable is clicked on. This design only worked for the first variable and not the second.</p>
     <h2>Conclusions</h2>
     <ul>
-        <li><b>Outcome:</b></li>
-        <li><b>Suggestions:</b></li>
-        <li><b>Reflections:</b></li>
+        <li><b>Outcome:</b> </li>
+        <li><b>Suggestions:</b> </li>
+        <li><b>Reflections:</b> The Munzner's approach has really helped in the analysis and choosing of the best design to implement for the different attributes. I was able to figure out what best visualizations to design, so I don’t waste my time implementing
+            uneffective visualizations. The approach has also helped me to understand the principles and the process of visualization and has helped me to figure out what visualizations will be good before I invested too much energy in making them.</li>
     </ul>
 </body>
 
