@@ -33,7 +33,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
     };
 
     // Default Country Data
-    setBubblePlot('United States');
+    setBubblePlot('Belgium');
 
     function setBubblePlot(chosenCountry) {
         getCountryData(chosenCountry);
@@ -93,12 +93,12 @@ Plotly.d3.csv("https://raw.githubusercontent.com/sumusa/Data-Visualization-Cours
             responsive: true
         };
 
-        Plotly.newPlot('plotdiv', data, layout, config);
+        Plotly.newPlot('plotdiv2', data, layout, config);
     };
 
-    var innerContainer = document.querySelector('[data-num="0"'),
+    var innerContainer = document.querySelector('[data-num="1"'),
         plotEl = innerContainer.querySelector('.plot'),
-        countrySelector = innerContainer.querySelector('.countrydata');
+        countrySelector = innerContainer.querySelector('.countrydata2');
 
     function assignOptions(textArray, selector) {
         for (var i = 0; i < textArray.length; i++) {
