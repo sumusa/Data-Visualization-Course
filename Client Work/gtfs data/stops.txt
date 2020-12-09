@@ -146,8 +146,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1415,1415,The Boulevart opposite CNIB,,47.579881,-52.699239,,,,,,0
 1420,1420,Legion Road -  @ Service Canada,,47.583794,-52.693156,,,,,,0
 1425,1425,Churchill Avenue -  Opp (MFRC) Military Family Resource Centre,,47.583419,-52.695819,,,,,,0
-1427,1427,Parsons Road - # 17,,47.5845,-52.7044,,,,,,0
-1428,1428,Selfridge Road by Ross Road,,47.58441,-52.70039,,,,,,0
 1430,1430,Charter Avenue -  Building 307,,47.585208,-52.698609,,,,,,0
 1440,1440,Charter Avenue near East Dr,,47.586496,-52.691899,,,,,,0
 1445,1445,Charter Avenue - Building 801,,47.588222,-52.689284,,,,,,0
@@ -311,7 +309,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 2455,2455,Waterford Bridge Road by ball field,,47.524839,-52.7598,,,,,,0
 2460,2460,Brookfield Rd - Opp  Mini Mart,,47.523937,-52.761729,,,,,,0
 2470,2470,Grieve Street - # 6,,47.52054,-52.76557,,,,,,0
-2475,2475,Hawker Crescent - # 28,,47.518419,-52.763832,,,,,,0
 2480,2480,Earhart Street - # 25,,47.51798,-52.760787,,,,,,0
 2485,2485,Earhart Street - # 7,,47.519139,-52.760406,,,,,,0
 2490,2490,Perlin Street - # 37,,47.520464,-52.760358,,,,,,0
@@ -491,7 +488,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3520,3520,Vinnicombe Street - # 10,,47.564106,-52.750767,,,,,,0
 3525,3525,Forest Road - # 200,,47.57954,-52.68536,,,,,,0
 3530,3530,Larkhall Street - # 7,,47.563697,-52.754958,,,,,,0
-3535,3535,Regatta Terrace- # 27,,47.58062,-52.682725,,,,,,0
 3540,3540,Cuckholds Cove Road - # 39,,47.579625,-52.681228,,,,,,0
 3550,3550,Forest Road opposite # 200,,47.579669,-52.685378,,,,,,0
 3555,3555,Forest Road - # 179,,47.57895,-52.687636,,,,,,0
@@ -503,7 +499,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3580,3580,Old Pennywell Road - #95,,47.556174,-52.749125,,,,,,0
 3585,3585,Portugal Cove Road - # 271,,47.593881,-52.725633,,,,,,0
 3595,3595,Portugal Cove Road - # 211,,47.591403,-52.723017,,,,,,0
-3625,3625,Ennis Avenue - # 137,,47.592858,-52.706897,,,,,,0
 3630,3630,Ennis Avenue - # 99 near school,,47.590111,-52.704453,,,,,,0
 3635,3635,Ennis Avenue - # 57,,47.587806,-52.704181,,,,,,0
 3640,3640,Ennis Avenue - # 23,,47.585481,-52.704656,,,,,,0
@@ -590,7 +585,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 4105,4105,Canada Dr - #.256,,47.526497,-52.777442,,,,,,0
 4110,4110,Canada Dr - # 310,,47.529217,-52.778617,,,,,,0
 4115,4115,Hopeall St - # 10,,47.530857,-52.776316,,,,,,0
-4120,4120,Frecker Dr - # 268,,47.532707,-52.773754,,,,,,0
+4120,4120,Frecker Dr - # 274,,47.532836,-52.773703,,,,,,0
 4125,4125,Frecker Dr -# 308,,47.534967,-52.771864,,,,,,0
 4130,4130,Frecker Dr - opp Bellevue Crescent,,47.535931,-52.771483,,,,,,0
 4140,4140,Empire Avenue - opp  # 718,,47.542035,-52.763853,,,,,,0
