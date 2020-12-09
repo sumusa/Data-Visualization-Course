@@ -1,0 +1,26 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+1,MB,1,"Village, Institutes",,3,,FF0000,000000
+2,MB,2,Malls via Lemarchant/Elizabeth,,3,,FF0000,000000
+3,MB,3,"Village, Stavanger",,3,,FF0000,000000
+5,MB,5,Avalon Mall - Virginia Park,,3,,FF0000,000000
+6,MB,6,"Village, Sesame Pk,Galway",,3,,FF0000,000000
+9,MB,9,"Torbay Rd, Institutes",,3,,FF0000,000000
+10,MB,10,"Downtown, MUN, Avalon, Kelsey",,3,,FF0000,000000
+11,MB,11,"Shea Hts, Downtown, Avalon Mall",,3,,FF0000,000000
+12,MB,12,Avalon Mall/Village,,3,,FF0000,000000
+13,MB,13,Cowan Heights Insitutes Express,,3,,FF0000,000000
+14,MB,14,"Airport Hts, Torbay Rd, MUN",,3,,FF0000,000000
+15,MB,15,Forest Rd/Bonaventure/MUN/Avalon,,3,,FF0000,000000
+16,MB,16,Kenmount Terrace/Institutes,,3,,FF0000,000000
+17,MB,17,Downtown/MUN/Confed/Torbay Rd,,3,,FF0000,000000
+18,MB,18,"Goulds, Kilbride, Village",,3,,FF0000,000000
+19,MB,19,Village/Cowan Hts/Mundy Pd/Avalon,,3,,FF0000,000000
+20,MB,20,Galway /Village Mall,,3,,FF0000,000000
+21,MB,21,Mount Pearl,,3,,FF0000,000000
+22,MB,22,Donovans,,3,,FF0000,000000
+23,MB,23,Stavanger to Mall,,3,,FF0000,000000
+24,MB,24,Airport Hts Express,,3,,FF0000,000000
+25,MB,25,Kilbride/Goulds/PtyHr,,3,,FF0000,000000
+26,MB,26,Kenmount Terrace Semi Express,,3,,FF0000,000000
+28,MB,28,Community Bus,,3,,FF0000,000000
+30,MB,30,Paradise,,3,,FF0000,000000

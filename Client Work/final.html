@@ -13,27 +13,55 @@
     <strong>COURSE: </strong>COMP 6774<br>
     <strong>CLIENT NAME: </strong> Dr. Daniel Fuller <br>
 
-    <h2>Attributions</h2>
+    <h2>Attribution</h2>
     <p>I attest that this submission was done by me (Sumayyah Musa).</p>
     <ul>
         <li>Data source: <a href="https://transitfeeds.com/p/metrobus-transit/293" class="href">Metrobus GTFS Data</a></li>
         <li>Material: <a href="https://dzone.com/articles/gtfs-transit-data-visualization-in-r" class="href">GTFS Transit Data Visualisation,</a> <a href="https://developers.google.com/transit/gtfs/reference#stopstxt">GTFS Dataset Reference</a></li>
+        <li><a href="https://towardsdatascience.com/r-for-gtfs-getting-the-number-of-trips-per-hour-for-each-line-4d22491e3944">R for GTFS,</a>
+
+            <a href="https://dzone.com/articles/gtfs-transit-data-visualization-in-r" class="href">GTFS Transit Data Visualisation</a></li>
     </ul>
 
     <h2>Client Interaction and Information</h2>
     <ul>
-        <li><b>Communication:</b> Communicated via Slack at least twice a week and I get swift and positive feedbacks.</li>
-        <li><b>Client Materials:</b> <a href="https://towardsdatascience.com/r-for-gtfs-getting-the-number-of-trips-per-hour-for-each-line-4d22491e3944">R for GTFS,</a>
-            <a href="https://transitfeeds.com/p/metrobus-transit/293" class="href">Metrobus GTFS Data,</a>
-            <a href="https://dzone.com/articles/gtfs-transit-data-visualization-in-r" class="href">GTFS Transit Data Visualisation</a></li>
-        <li><b>Client Instructions: </b>I would like to create a map of the GTFS data for St. John’s showing changes over time due to COVID. </li>
-        <li><b>Client Product: </b><a href="submission.html">submission.html,</a>and <a href="submission-1.r" class="href">submission-1.r</a></li>
+        <li><b>Communication:</b> The client has been my Graduate Supervisor before getting assigned to him. I didn't need to introduce myself before talking about the case, as there had been some interaction between the client and me. I reached him via Slack
+            to talk about the case. I asked a lot of questions just to confirm and make sure I got all my requirements. I requested for some documentations about the case, and he provided me with materials that helped. We had video calls via Google Meet,
+            to update him on what I had done so far, at least once a week. If I had more questions, I asked during these meetings and I got swift and positive feedbacks. The stated problem is to visualize Google Transit Feed Specification (GTFS) data,
+            and this is related to the client's objectives which are to examine how transportation systems influence physical activity, create national level measures of transit and relate those measures to physical activity, and determine the health
+            impacts of transportation interventions in Canada.
+        </li>
+        <li><b>Client Materials:</b>
+            <ul>
+                <li><b>Dataset:</b> The
+                    <a href="https://transitfeeds.com/p/metrobus-transit/293"> dataset</a> is a zipped file (contains 7 comma delimited text files) of Google Transit Feed Specification (GTFS), <i>a specification that defines a data format for public transportation routes, stop, schedules,
+                    and associated geographic information</i>, for <a href="https://en.wikipedia.org/wiki/Metrobus_Transit">Metrobus Transit</a>, the transit agency that provides fixed-route transit services within the municipalities of St. John's, Newfoundland.
+                    The data is one of the datasets a transit agency generates and shares openly with the public. GTFS feeds usually contain scheduled transit service information including stop and route locations of a particular transit agency.
+                </li>
+                <li><b>Code libraries:</b> The code for the visualization was written in
+                    <a href="https://www.r-project.org/">R language</a>, and the libraries used were:
+                    <ul>
+                        <li>
+                            <a href="https://www.tidyverse.org/">Tidyverse</a>, a collection of R packages for Data science, and the tidyverse packages used in these submission were:
+                            <a href="https://dplyr.tidyverse.org/">dplyr</a>,
+                            <a href="https://ggplot2.tidyverse.org/"> ggplot2</a>, and
+                            <a href="https://readr.tidyverse.org/">readr</a> for data wrangling and exploratory analysis;</li>
+                        <li>
+                            <a href="https://rstudio.github.io/leaflet/">Leaflet</a>, a javascript library for making interactive maps, was used for visualization.</li>
+                    </ul>
+                </li>
+            </ul>
+            <li><b>Client Instructions: </b>The task as presented by the client was to create a map of the GTFS data for St. John’s Metrobus Transit Agency, showing changes over time due to COVID. He later stated that the maps should show the routes, stops,
+                and their trip frequencies, and the resulting product could either be a standalone html file or an animated map.</li>
+            <li><b>Client Product: </b>The results were submitted to the client, as a <a href="submission.html">standalone html file,</a> and the
+                <a href="submission-1.r">R codes</a> used in creating the visualizations were also submitted.
+            </li>
     </ul>
 
     <h2>Methods and Design</h2>
     <ul>
         <li><b>Domain: </b> Google Transit Feed Specification (GTFS) Data was used to show the changes in St. John's Metrobus Transit due to COVID from 20th of March, 2020 to 13th of September, 2020</li>
-        <li><b>Wrangling: </b>Data set did not require wrangling</li>
+        <li><b>Wrangling: </b>Unzipping, Joining the dataframes, filtering, transforming</li>
     </ul>
 
     <h3>What Analysis</h3>
