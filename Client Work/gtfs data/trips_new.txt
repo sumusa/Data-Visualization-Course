@@ -1,0 +1,1419 @@
+trip_id,route_id,service_id,trip_headsign,trip_short_name,direction_id,block_id,shape_id,wheelchair_accessible,bikes_allowed
+185488,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185489,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185490,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185491,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185492,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185493,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185494,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185495,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185496,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185497,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185498,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185499,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185500,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185501,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185502,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185503,1,1,MUN / CONA/ MI,,0,28850,6,0,0
+185505,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185506,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185507,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185508,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185509,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185510,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185511,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185512,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185513,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185514,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185515,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185516,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185517,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185518,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185519,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185520,1,1,Crosbie Rd - Village Mall,,1,28850,7,0,0
+185613,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185614,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185615,2,1,Pleasantville - Avalon Mall,,0,28864,8,0,0
+185616,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185617,2,1,Pleasantville - Avalon Mall,,0,28865,8,0,0
+185618,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185619,2,1,Pleasantville - Avalon Mall,,0,28864,8,0,0
+185620,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185621,2,1,Pleasantville - Avalon Mall,,0,28865,8,0,0
+185622,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185623,2,1,Pleasantville - Avalon Mall,,0,28864,8,0,0
+185624,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185625,2,1,Pleasantville - Avalon Mall,,0,28865,8,0,0
+185626,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185627,2,1,Pleasantville - Avalon Mall,,0,28864,8,0,0
+185628,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185629,2,1,Pleasantville - Avalon Mall,,0,28865,8,0,0
+185630,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185631,2,1,Pleasantville - Avalon Mall,,0,28864,8,0,0
+185632,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185633,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185634,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185635,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185636,2,1,Pleasantville - Avalon Mall,,0,28862,8,0,0
+185637,2,1,Pleasantville - Avalon Mall,,0,28863,8,0,0
+185639,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185640,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185641,2,1,Pleasantville - Village Mall,,1,28865,9,0,0
+185642,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185643,2,1,Pleasantville - Village Mall,,1,28864,9,0,0
+185644,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185645,2,1,Pleasantville - Village Mall,,1,28865,9,0,0
+185646,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185647,2,1,Pleasantville - Village Mall,,1,28864,9,0,0
+185648,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185649,2,1,Pleasantville - Village Mall,,1,28865,9,0,0
+185650,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185651,2,1,Pleasantville - Village Mall,,1,28864,9,0,0
+185652,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185653,2,1,Pleasantville - Village Mall,,1,28865,9,0,0
+185654,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185655,2,1,Pleasantville - Village Mall,,1,28864,9,0,0
+185656,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185657,2,1,Pleasantville - Village Mall,,1,28865,9,0,0
+185658,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185659,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185660,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185661,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185662,2,1,Pleasantville - Village Mall,,1,28863,9,0,0
+185663,2,1,Pleasantville - Village Mall,,1,28862,9,0,0
+185760,3,1,Downtown - Stavanger Dr,,0,28875,17,0,0
+185761,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185762,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185763,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185764,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185765,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185766,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185767,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185768,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185769,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185770,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185771,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185772,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185773,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185774,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185775,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185776,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185777,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185778,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185779,3,1,Downtown - Stavanger Dr,,0,28876,10,0,0
+185780,3,1,Downtown - Stavanger Dr,,0,28877,10,0,0
+185781,3,1,Downtown - Stavanger Dr,,0,28875,10,0,0
+185782,3,1,Downtown - Stavanger Dr,,0,28876,11,0,0
+185783,3,1,Downtown - Stavanger Dr,,0,28877,11,0,0
+185784,3,1,Downtown - Stavanger Dr,,0,28875,11,0,0
+185785,3,1,Downtown - Stavanger Dr,,0,28876,11,0,0
+185786,3,1,Downtown - Stavanger Dr,,0,28875,11,0,0
+185787,3,1,Downtown - Stavanger Dr,,0,28876,11,0,0
+185788,3,1,Downtown - Stavanger Dr,,0,28875,11,0,0
+185789,3,1,Downtown - Stavanger Dr,,0,28876,11,0,0
+185791,3,1,Downtown - Village Mall,,1,28875,12,0,0
+185804,3,1,Downtown - Village Mall,,1,28876,13,0,0
+185792,3,1,Downtown - Village Mall,,1,28877,12,0,0
+185805,3,1,Downtown - Village Mall,,1,28875,13,0,0
+185793,3,1,Downtown - Village Mall,,1,28876,12,0,0
+185806,3,1,Downtown - Village Mall,,1,28877,13,0,0
+185794,3,1,Downtown - Village Mall,,1,28875,12,0,0
+185807,3,1,Downtown - Village Mall,,1,28876,13,0,0
+185795,3,1,Downtown - Village Mall,,1,28877,12,0,0
+185808,3,1,Downtown - Village Mall,,1,28875,13,0,0
+185796,3,1,Downtown - Village Mall,,1,28876,12,0,0
+185809,3,1,Downtown - Village Mall,,1,28877,13,0,0
+185797,3,1,Downtown - Village Mall,,1,28875,12,0,0
+185810,3,1,Downtown - Village Mall,,1,28876,13,0,0
+185798,3,1,Downtown - Village Mall,,1,28877,12,0,0
+185811,3,1,Downtown - Village Mall,,1,28875,13,0,0
+185799,3,1,Downtown - Village Mall,,1,28876,12,0,0
+185812,3,1,Downtown - Village Mall,,1,28877,13,0,0
+185800,3,1,Downtown - Village Mall,,1,28875,12,0,0
+185813,3,1,Downtown - Village Mall,,1,28876,16,0,0
+185801,3,1,Downtown - Village Mall,,1,28877,14,0,0
+185814,3,1,Downtown - Village Mall,,1,28875,16,0,0
+185802,3,1,Downtown - Village Mall,,1,28876,14,0,0
+185815,3,1,Downtown - Village Mall,,1,28877,16,0,0
+185803,3,1,Downtown - Village Mall,,1,28875,14,0,0
+185816,3,1,Downtown - Village Mall,,1,28876,16,0,0
+185819,3,1,Downtown - Village Mall,,1,28875,14,0,0
+185817,3,1,Downtown - Village Mall,,1,28876,16,0,0
+185820,3,1,Downtown - Village Mall,,1,28875,14,0,0
+185818,3,1,Downtown - Village Mall,,1,28876,15,0,0
+185925,6,1,To Seasame Park,,0,28882,19,0,0
+185924,6,1,To Seasame Park,,0,28882,19,0,0
+185923,6,1,To Seasame Park,,0,28882,19,0,0
+185922,6,1,To Seasame Park,,0,28882,19,0,0
+185921,6,1,To Seasame Park,,0,28882,19,0,0
+185920,6,1,To Seasame Park,,0,28882,19,0,0
+185919,6,1,To Seasame Park,,0,28882,19,0,0
+185918,6,1,To Seasame Park,,0,28882,19,0,0
+185917,6,1,To Seasame Park,,0,28882,19,0,0
+185916,6,1,To Seasame Park,,0,28882,19,0,0
+185915,6,1,To Seasame Park,,0,28882,19,0,0
+185914,6,1,To Seasame Park,,0,28882,19,0,0
+185937,6,1,To Village Mall,,1,28882,20,0,0
+185936,6,1,To Village Mall,,1,28882,20,0,0
+185935,6,1,To Village Mall,,1,28882,20,0,0
+185934,6,1,To Village Mall,,1,28882,20,0,0
+185933,6,1,To Village Mall,,1,28882,20,0,0
+185932,6,1,To Village Mall,,1,28882,20,0,0
+185931,6,1,To Village Mall,,1,28882,20,0,0
+185930,6,1,To Village Mall,,1,28882,20,0,0
+185929,6,1,To Village Mall,,1,28882,20,0,0
+185928,6,1,To Village Mall,,1,28882,20,0,0
+185927,6,1,To Village Mall,,1,28882,20,0,0
+185926,6,1,To Village Mall,,1,28882,20,0,0
+186054,10,1,MUN - Downtown,,0,28893,23,0,0
+186055,10,1,MUN - Downtown,,0,28894,24,0,0
+186056,10,1,MUN - Downtown,,0,28893,24,0,0
+186057,10,1,MUN - Downtown,,0,28894,24,0,0
+186058,10,1,MUN - Downtown,,0,28893,24,0,0
+186059,10,1,MUN - Downtown,,0,28894,24,0,0
+186060,10,1,MUN - Downtown,,0,28893,24,0,0
+186061,10,1,MUN - Downtown,,0,28894,24,0,0
+186062,10,1,MUN - Downtown,,0,28895,24,0,0
+186063,10,1,MUN - Downtown,,0,28893,24,0,0
+186064,10,1,MUN - Downtown,,0,28894,24,0,0
+186065,10,1,MUN - Downtown,,0,28895,24,0,0
+186066,10,1,MUN - Downtown,,0,28893,24,0,0
+186067,10,1,MUN - Downtown,,0,28894,24,0,0
+186068,10,1,MUN - Downtown,,0,28895,24,0,0
+186069,10,1,MUN - Downtown,,0,28893,24,0,0
+186070,10,1,MUN - Downtown,,0,28894,24,0,0
+186071,10,1,MUN - Downtown,,0,28895,24,0,0
+186072,10,1,MUN - Downtown,,0,28893,24,0,0
+186073,10,1,MUN - Downtown,,0,28894,24,0,0
+186074,10,1,MUN - Downtown,,0,28895,24,0,0
+186075,10,1,MUN - Downtown,,0,28893,25,0,0
+186076,10,1,MUN - Downtown,,0,28894,24,0,0
+186077,10,1,MUN - Downtown,,0,28895,24,0,0
+186078,10,1,MUN - Downtown,,0,28894,24,0,0
+186079,10,1,MUN - Downtown,,0,28895,24,0,0
+186080,10,1,MUN - Downtown,,0,28894,24,0,0
+186081,10,1,MUN - Downtown,,0,28895,24,0,0
+186083,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186084,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186085,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186086,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186087,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186088,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186111,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,28,0,0
+186089,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186090,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186091,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186092,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186093,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186094,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186095,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186096,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186097,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186098,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186099,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186100,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186101,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28893,26,0,0
+186102,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186103,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186104,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186105,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186106,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186107,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,26,0,0
+186108,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28894,26,0,0
+186109,10,1,MUN - Avalon Mall - Kelsey Dr,,1,28895,27,0,0
+186169,11,1,To Shea Heights,,0,28899,30,0,0
+186170,11,1,To Shea Heights,,0,28899,30,0,0
+186171,11,1,To Shea Heights,,0,28899,30,0,0
+186172,11,1,To Shea Heights,,0,28899,30,0,0
+186173,11,1,To Shea Heights,,0,28899,30,0,0
+186174,11,1,To Shea Heights,,0,28899,30,0,0
+186175,11,1,To Shea Heights,,0,28899,30,0,0
+186176,11,1,To Shea Heights,,0,28899,30,0,0
+186177,11,1,To Shea Heights,,0,28899,30,0,0
+186178,11,1,To Avalon Mall,,1,28899,31,0,0
+186179,11,1,To Avalon Mall,,1,28899,31,0,0
+186180,11,1,To Avalon Mall,,1,28899,31,0,0
+186181,11,1,To Avalon Mall,,1,28899,31,0,0
+186182,11,1,To Avalon Mall,,1,28899,31,0,0
+186183,11,1,To Avalon Mall,,1,28899,31,0,0
+186184,11,1,To Avalon Mall,,1,28899,31,0,0
+186185,11,1,To Avalon Mall,,1,28899,31,0,0
+186186,11,1,To Avalon Mall,,1,28899,31,0,0
+186187,11,1,To Avalon Mall,,1,28899,31,0,0
+186243,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186244,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186245,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186246,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186247,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186248,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186249,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186250,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186251,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186252,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186253,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186254,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186255,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186256,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186257,12,1,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28902,32,0,0
+186258,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186259,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186260,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186261,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186262,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186263,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186264,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186265,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186266,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186267,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186268,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186269,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186270,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186271,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186272,12,1,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28902,33,0,0
+186328,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186329,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186330,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186331,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186332,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186333,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186334,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186335,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186336,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186337,14,1,Torbay Rd - Airport,,0,28905,34,0,0
+186338,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186339,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186340,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186341,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186342,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186343,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186344,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186345,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186346,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186347,14,1,Torbay Rd - MUN Center,,1,28905,35,0,0
+186421,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186422,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186423,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186424,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186425,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186426,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186427,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186428,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186429,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186430,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186431,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186432,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186433,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186434,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186435,15,1,MUN - Forest Rd,,0,28909,36,0,0
+186436,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186437,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186438,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186439,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186440,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186441,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186442,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186443,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186444,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186445,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186446,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186447,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186448,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186449,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186450,15,1,MUN - Avalon Mall,,1,28909,37,0,0
+186507,16,1,Kenmount Terrace,,0,28912,39,0,0
+186508,16,1,Kenmount Terrace,,0,28912,39,0,0
+186509,16,1,Kenmount Terrace,,0,28912,39,0,0
+186510,16,1,Kenmount Terrace,,0,28912,39,0,0
+186511,16,1,Kenmount Terrace,,0,28912,39,0,0
+186512,16,1,Kenmount Terrace,,0,28912,39,0,0
+186513,16,1,Kenmount Terrace,,0,28912,39,0,0
+186514,16,1,Kenmount Terrace,,0,28912,39,0,0
+186515,16,1,Kenmount Terrace,,0,28912,39,0,0
+186516,16,1,Kenmount Terrace,,0,28912,39,0,0
+186517,16,1,Kenmount Terrace,,0,28912,39,0,0
+186518,16,1,Kenmount Terrace,,0,28912,39,0,0
+186519,16,1,Kenmount Terrace,,0,28912,39,0,0
+186520,16,1,Kenmount Terrace,,0,28912,39,0,0
+186521,16,1,Kenmount Terrace,,0,28912,39,0,0
+186522,16,1,MUN Center,,1,28912,40,0,0
+186523,16,1,MUN Center,,1,28912,40,0,0
+186524,16,1,MUN Center,,1,28912,40,0,0
+186525,16,1,MUN Center,,1,28912,40,0,0
+186526,16,1,MUN Center,,1,28912,40,0,0
+186527,16,1,MUN Center,,1,28912,40,0,0
+186528,16,1,MUN Center,,1,28912,40,0,0
+186529,16,1,MUN Center,,1,28912,40,0,0
+186530,16,1,MUN Center,,1,28912,40,0,0
+186531,16,1,MUN Center,,1,28912,40,0,0
+186532,16,1,MUN Center,,1,28912,40,0,0
+186533,16,1,MUN Center,,1,28912,40,0,0
+186534,16,1,MUN Center,,1,28912,40,0,0
+186535,16,1,MUN Center,,1,28912,40,0,0
+186536,16,1,MUN Center,,1,28912,40,0,0
+186591,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186592,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186593,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186594,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186595,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186596,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186597,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186598,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186599,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186600,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186601,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186602,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186603,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186604,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186605,18,1,Kilbride - Goulds,,0,28916,41,0,0
+186623,18,1,Kilbride - Village Mall,,1,28916,43,0,0
+186607,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186608,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186609,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186610,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186611,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186612,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186613,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186614,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186615,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186616,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186617,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186618,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186619,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186620,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186621,18,1,Kilbride - Village Mall,,1,28916,42,0,0
+186704,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186705,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186706,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186707,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186708,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186709,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186710,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186711,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186712,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186713,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186714,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186715,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186716,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186717,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186718,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186719,19,1,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28920,44,0,0
+186726,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186727,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186728,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186729,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186730,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186731,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186732,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186733,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186734,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186735,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186736,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186737,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186738,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186739,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186740,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+187156,19,1,Crosbie Rd - Cowan Hgts - Village Mall,,1,28920,45,0,0
+186819,20,1,To Galway,,0,28882,46,0,0
+186818,20,1,To Galway,,0,28882,46,0,0
+186817,20,1,To Galway,,0,28882,46,0,0
+186816,20,1,To Galway,,0,28882,46,0,0
+186815,20,1,To Galway,,0,28882,46,0,0
+186814,20,1,To Galway,,0,28882,46,0,0
+186813,20,1,To Galway,,0,28882,46,0,0
+186812,20,1,To Galway,,0,28882,46,0,0
+186811,20,1,To Galway,,0,28882,46,0,0
+186810,20,1,To Galway,,0,28882,46,0,0
+186809,20,1,To Galway,,0,28882,46,0,0
+186808,20,1,To Galway,,0,28882,46,0,0
+186807,20,1,To Galway,,0,28882,46,0,0
+186806,20,1,To Galway,,0,28882,46,0,0
+186805,20,1,To Galway,,0,28882,46,0,0
+186804,20,1,To Galway,,0,28882,46,0,0
+186803,20,1,To Galway,,0,28882,46,0,0
+186836,20,1,To Village Mall,,1,28882,47,0,0
+186835,20,1,To Village Mall,,1,28882,47,0,0
+186834,20,1,To Village Mall,,1,28882,47,0,0
+186833,20,1,To Village Mall,,1,28882,47,0,0
+186832,20,1,To Village Mall,,1,28882,47,0,0
+186831,20,1,To Village Mall,,1,28882,47,0,0
+186830,20,1,To Village Mall,,1,28882,47,0,0
+186829,20,1,To Village Mall,,1,28882,47,0,0
+186828,20,1,To Village Mall,,1,28882,47,0,0
+186827,20,1,To Village Mall,,1,28882,47,0,0
+186826,20,1,To Village Mall,,1,28882,47,0,0
+186825,20,1,To Village Mall,,1,28882,47,0,0
+186824,20,1,To Village Mall,,1,28882,47,0,0
+186823,20,1,To Village Mall,,1,28882,47,0,0
+186822,20,1,To Village Mall,,1,28882,47,0,0
+186821,20,1,To Village Mall,,1,28882,47,0,0
+186820,20,1,To Village Mall,,1,28882,47,0,0
+186893,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186894,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186895,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186896,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186897,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186898,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186899,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186900,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186901,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,48,0,0
+186902,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,49,0,0
+186903,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,49,0,0
+186904,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,49,0,0
+186905,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,49,0,0
+186906,21,1,Mount Pearl Sq - Commonwealth Ave,,0,28925,49,0,0
+186907,21,1,Mount Pearl Sq - Village Mall,,1,28925,52,0,0
+186908,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186909,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186910,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186911,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186912,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186913,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186914,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186915,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186916,21,1,Mount Pearl Sq - Village Mall,,1,28925,50,0,0
+186917,21,1,Mount Pearl Sq - Village Mall,,1,28925,51,0,0
+186918,21,1,Mount Pearl Sq - Village Mall,,1,28925,51,0,0
+186919,21,1,Mount Pearl Sq - Village Mall,,1,28925,51,0,0
+186920,21,1,Mount Pearl Sq - Village Mall,,1,28925,51,0,0
+186921,21,1,Mount Pearl Sq - Village Mall,,1,28925,51,0,0
+186960,23,1,Stavanger Dr,,0,28929,56,0,0
+186961,23,1,Stavanger Dr,,0,28929,56,0,0
+186962,23,1,Stavanger Dr,,0,28929,56,0,0
+186963,23,1,Stavanger Dr,,0,28929,56,0,0
+186964,23,1,Stavanger Dr,,0,28929,56,0,0
+186965,23,1,Stavanger Dr,,0,28929,56,0,0
+186966,23,1,Stavanger Dr,,0,28929,56,0,0
+186967,23,1,Stavanger Dr,,0,28929,56,0,0
+186968,23,1,Stavanger Dr,,0,28929,56,0,0
+186969,23,1,Avalon Mall,,1,28929,57,0,0
+186970,23,1,Avalon Mall,,1,28929,57,0,0
+186971,23,1,Avalon Mall,,1,28929,57,0,0
+186972,23,1,Avalon Mall,,1,28929,57,0,0
+186973,23,1,Avalon Mall,,1,28929,57,0,0
+186974,23,1,Avalon Mall,,1,28929,57,0,0
+186975,23,1,Avalon Mall,,1,28929,57,0,0
+186976,23,1,Avalon Mall,,1,28929,57,0,0
+186977,23,1,Avalon Mall,,1,28929,57,0,0
+185522,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185523,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185524,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185525,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185526,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185527,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185528,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185529,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185530,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185531,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185532,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185533,1,2,MUN / CONA/ MI,,0,28851,6,0,0
+185534,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185535,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185536,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185537,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185538,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185539,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185540,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185541,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185542,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185543,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185544,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185545,1,2,Crosbie Rd - Village Mall,,1,28851,7,0,0
+185665,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185666,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185667,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185668,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185669,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185670,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185671,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185672,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185673,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185674,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185675,2,2,Pleasantville - Avalon Mall,,0,28866,8,0,0
+185676,2,2,Pleasantville - Avalon Mall,,0,28867,8,0,0
+185677,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185678,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185679,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185680,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185681,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185682,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185683,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185684,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185685,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185686,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185687,2,2,Pleasantville - Village Mall,,1,28867,9,0,0
+185688,2,2,Pleasantville - Village Mall,,1,28866,9,0,0
+185822,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185823,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185824,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185825,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185826,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185827,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185828,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185829,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185830,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185831,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185832,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185833,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185834,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185835,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185836,3,2,Downtown - Stavanger Dr,,0,28878,11,0,0
+185837,3,2,Downtown - Stavanger Dr,,0,28879,11,0,0
+185838,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185847,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185839,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185848,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185840,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185849,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185841,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185850,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185842,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185851,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185843,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185852,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185844,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185853,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185845,3,2,Downtown - Village Mall,,1,28879,16,0,0
+185854,3,2,Downtown - Village Mall,,1,28878,14,0,0
+185846,3,2,Downtown - Village Mall,,1,28879,18,0,0
+185946,6,2,To Seasame Park,,0,28883,19,0,0
+185945,6,2,To Seasame Park,,0,28883,19,0,0
+185944,6,2,To Seasame Park,,0,28883,19,0,0
+185943,6,2,To Seasame Park,,0,28883,19,0,0
+185942,6,2,To Seasame Park,,0,28883,19,0,0
+185941,6,2,To Seasame Park,,0,28883,19,0,0
+185940,6,2,To Seasame Park,,0,28883,19,0,0
+185939,6,2,To Seasame Park,,0,28883,19,0,0
+185938,6,2,To Seasame Park,,0,28883,19,0,0
+185955,6,2,To Village Mall,,1,28883,20,0,0
+185954,6,2,To Village Mall,,1,28883,20,0,0
+185953,6,2,To Village Mall,,1,28883,20,0,0
+185952,6,2,To Village Mall,,1,28883,20,0,0
+185951,6,2,To Village Mall,,1,28883,20,0,0
+185950,6,2,To Village Mall,,1,28883,20,0,0
+185949,6,2,To Village Mall,,1,28883,20,0,0
+185948,6,2,To Village Mall,,1,28883,20,0,0
+185947,6,2,To Village Mall,,1,28883,20,0,0
+186112,10,2,MUN - Downtown,,0,28896,23,0,0
+186113,10,2,MUN - Downtown,,0,28897,24,0,0
+186114,10,2,MUN - Downtown,,0,28896,24,0,0
+186115,10,2,MUN - Downtown,,0,28897,24,0,0
+186116,10,2,MUN - Downtown,,0,28896,24,0,0
+186117,10,2,MUN - Downtown,,0,28897,24,0,0
+186118,10,2,MUN - Downtown,,0,28896,24,0,0
+186119,10,2,MUN - Downtown,,0,28897,24,0,0
+186120,10,2,MUN - Downtown,,0,28896,24,0,0
+186121,10,2,MUN - Downtown,,0,28897,24,0,0
+186122,10,2,MUN - Downtown,,0,28896,24,0,0
+186123,10,2,MUN - Downtown,,0,28897,24,0,0
+186124,10,2,MUN - Downtown,,0,28896,24,0,0
+186125,10,2,MUN - Downtown,,0,28897,24,0,0
+186126,10,2,MUN - Downtown,,0,28896,24,0,0
+186127,10,2,MUN - Downtown,,0,28897,24,0,0
+186128,10,2,MUN - Downtown,,0,28896,24,0,0
+186129,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186130,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186131,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186132,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186133,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186134,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186135,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186136,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186137,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186138,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186139,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186140,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186141,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186142,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,26,0,0
+186143,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,26,0,0
+186144,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28897,27,0,0
+186145,10,2,MUN - Avalon Mall - Kelsey Dr,,1,28896,29,0,0
+186273,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186274,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186275,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186276,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186277,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186278,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186279,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186280,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186281,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186282,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186283,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186284,12,2,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28903,32,0,0
+186285,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186286,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186287,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186288,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186289,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186290,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186291,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186292,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186293,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186294,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186295,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186296,12,2,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28903,33,0,0
+186348,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186349,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186350,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186351,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186352,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186353,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186354,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186355,14,2,Torbay Rd - Airport,,0,28906,34,0,0
+186356,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186357,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186358,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186359,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186360,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186361,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186362,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186363,14,2,Torbay Rd - MUN Center,,1,28906,35,0,0
+186451,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186452,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186453,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186454,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186455,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186456,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186457,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186458,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186459,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186460,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186461,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186462,15,2,MUN - Forest Rd,,0,28910,36,0,0
+186463,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186464,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186465,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186466,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186467,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186468,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186469,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186470,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186471,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186472,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186473,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186474,15,2,MUN - Avalon Mall,,1,28910,37,0,0
+186537,16,2,Kenmount Terrace,,0,28913,39,0,0
+186538,16,2,Kenmount Terrace,,0,28913,39,0,0
+186539,16,2,Kenmount Terrace,,0,28913,39,0,0
+186540,16,2,Kenmount Terrace,,0,28913,39,0,0
+186541,16,2,Kenmount Terrace,,0,28913,39,0,0
+186542,16,2,Kenmount Terrace,,0,28913,39,0,0
+186543,16,2,Kenmount Terrace,,0,28913,39,0,0
+186544,16,2,Kenmount Terrace,,0,28913,39,0,0
+186545,16,2,Kenmount Terrace,,0,28913,39,0,0
+186546,16,2,MUN Center,,1,28913,40,0,0
+186547,16,2,MUN Center,,1,28913,40,0,0
+186548,16,2,MUN Center,,1,28913,40,0,0
+186549,16,2,MUN Center,,1,28913,40,0,0
+186550,16,2,MUN Center,,1,28913,40,0,0
+186551,16,2,MUN Center,,1,28913,40,0,0
+186552,16,2,MUN Center,,1,28913,40,0,0
+186553,16,2,MUN Center,,1,28913,40,0,0
+186554,16,2,MUN Center,,1,28913,40,0,0
+186624,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186625,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186626,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186627,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186628,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186629,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186630,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186631,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186632,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186633,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186634,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186635,18,2,Kilbride - Goulds,,0,28917,41,0,0
+186636,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186637,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186638,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186639,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186640,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186641,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186642,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186643,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186644,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186645,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186646,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186647,18,2,Kilbride - Village Mall,,1,28917,42,0,0
+186747,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186748,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186749,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186750,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186751,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186752,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186753,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186754,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186755,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186756,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186757,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186758,19,2,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28922,44,0,0
+186759,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186760,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186761,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186762,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186763,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186764,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186765,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186766,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186767,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186768,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186769,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186770,19,2,Crosbie Rd - Cowan Hgts - Village Mall,,1,28922,45,0,0
+186847,20,2,To Galway,,0,28883,46,0,0
+186846,20,2,To Galway,,0,28883,46,0,0
+186845,20,2,To Galway,,0,28883,46,0,0
+186844,20,2,To Galway,,0,28883,46,0,0
+186843,20,2,To Galway,,0,28883,46,0,0
+186842,20,2,To Galway,,0,28883,46,0,0
+186841,20,2,To Galway,,0,28883,46,0,0
+186840,20,2,To Galway,,0,28883,46,0,0
+186839,20,2,To Galway,,0,28883,46,0,0
+186838,20,2,To Galway,,0,28883,46,0,0
+186837,20,2,To Galway,,0,28883,46,0,0
+186858,20,2,To Village Mall,,1,28883,47,0,0
+186857,20,2,To Village Mall,,1,28883,47,0,0
+186856,20,2,To Village Mall,,1,28883,47,0,0
+186855,20,2,To Village Mall,,1,28883,47,0,0
+186854,20,2,To Village Mall,,1,28883,47,0,0
+186853,20,2,To Village Mall,,1,28883,47,0,0
+186852,20,2,To Village Mall,,1,28883,47,0,0
+186851,20,2,To Village Mall,,1,28883,47,0,0
+186850,20,2,To Village Mall,,1,28883,47,0,0
+186849,20,2,To Village Mall,,1,28883,47,0,0
+186848,20,2,To Village Mall,,1,28883,47,0,0
+186922,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186923,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186924,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186925,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186926,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186927,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186928,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186929,21,2,Mount Pearl Sq - Commonwealth Ave,,0,28926,48,0,0
+186930,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186931,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186932,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186933,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186934,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186935,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186936,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186937,21,2,Mount Pearl Sq - Village Mall,,1,28926,50,0,0
+186978,23,2,Stavanger Dr,,0,28930,56,0,0
+186979,23,2,Stavanger Dr,,0,28930,56,0,0
+186980,23,2,Stavanger Dr,,0,28930,56,0,0
+186981,23,2,Stavanger Dr,,0,28930,56,0,0
+186982,23,2,Stavanger Dr,,0,28930,56,0,0
+186983,23,2,Stavanger Dr,,0,28930,56,0,0
+186984,23,2,Stavanger Dr,,0,28930,56,0,0
+186985,23,2,Stavanger Dr,,0,28930,56,0,0
+186986,23,2,Avalon Mall,,1,28930,57,0,0
+186987,23,2,Avalon Mall,,1,28930,57,0,0
+186988,23,2,Avalon Mall,,1,28930,57,0,0
+186989,23,2,Avalon Mall,,1,28930,57,0,0
+186990,23,2,Avalon Mall,,1,28930,57,0,0
+186991,23,2,Avalon Mall,,1,28930,57,0,0
+186992,23,2,Avalon Mall,,1,28930,57,0,0
+186993,23,2,Avalon Mall,,1,28930,57,0,0
+187145,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187147,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187146,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187029,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187030,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187155,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187031,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187032,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187033,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187034,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187035,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187036,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187037,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187038,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187039,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187040,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187041,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187042,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187043,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187044,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187045,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187046,1,5,MUN / CONA/ MI,,0,28937,6,0,0
+187047,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187048,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187049,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187050,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187051,1,5,MUN / CONA/ MI,,0,28938,6,0,0
+187148,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187149,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187150,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187151,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187152,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187153,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187154,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187059,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187060,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187061,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187062,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187063,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187064,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187065,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187066,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187067,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187068,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187070,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187071,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187073,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187074,1,5,Crosbie Rd - Village Mall,,1,28937,7,0,0
+187075,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187076,1,5,Crosbie Rd - Village Mall,,1,28937,58,0,0
+187077,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187078,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187079,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187080,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+187081,1,5,Crosbie Rd - Village Mall,,1,28938,7,0,0
+185547,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185548,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185549,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185550,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185551,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185552,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185553,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185554,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185555,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185556,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185557,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185558,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185559,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185560,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185561,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185562,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185563,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185564,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185565,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185566,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185567,2,5,Pleasantville - Avalon Mall,,0,28853,8,0,0
+185568,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185572,2,5,Pleasantville - Avalon Mall,,0,28855,8,0,0
+185573,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185574,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185575,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185576,2,5,Pleasantville - Avalon Mall,,0,28854,8,0,0
+185577,2,5,Pleasantville - Avalon Mall,,0,28856,8,0,0
+185580,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185581,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185582,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185583,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185584,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185585,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185586,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185587,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185588,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185589,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185590,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185591,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185592,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185593,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185594,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185595,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185596,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185597,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185598,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185599,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185601,2,5,Pleasantville - Village Mall,,1,28855,9,0,0
+185603,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185606,2,5,Pleasantville - Village Mall,,1,28853,9,0,0
+185607,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185608,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185609,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185610,2,5,Pleasantville - Village Mall,,1,28856,9,0,0
+185611,2,5,Pleasantville - Village Mall,,1,28854,9,0,0
+185689,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185690,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185691,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185692,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185693,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185694,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185695,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185696,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185697,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185698,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185699,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185700,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185702,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185703,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185704,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185705,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185706,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185707,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185708,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185709,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185711,3,5,Downtown - Stavanger Dr,,0,28870,10,0,0
+185713,3,5,Downtown - Stavanger Dr,,0,28868,10,0,0
+185714,3,5,Downtown - Stavanger Dr,,0,28869,10,0,0
+185715,3,5,Downtown - Stavanger Dr,,0,28870,11,0,0
+185716,3,5,Downtown - Stavanger Dr,,0,28868,11,0,0
+185717,3,5,Downtown - Stavanger Dr,,0,28869,11,0,0
+185718,3,5,Downtown - Stavanger Dr,,0,28868,11,0,0
+185719,3,5,Downtown - Stavanger Dr,,0,28869,11,0,0
+185720,3,5,Downtown - Stavanger Dr,,0,28868,11,0,0
+185721,3,5,Downtown - Stavanger Dr,,0,28869,11,0,0
+185723,3,5,Downtown - Village Mall,,1,28870,12,0,0
+185729,3,5,Downtown - Village Mall,,1,28868,13,0,0
+185724,3,5,Downtown - Village Mall,,1,28869,12,0,0
+185730,3,5,Downtown - Village Mall,,1,28870,13,0,0
+185725,3,5,Downtown - Village Mall,,1,28868,12,0,0
+185731,3,5,Downtown - Village Mall,,1,28869,13,0,0
+185726,3,5,Downtown - Village Mall,,1,28870,12,0,0
+185732,3,5,Downtown - Village Mall,,1,28868,13,0,0
+185727,3,5,Downtown - Village Mall,,1,28869,12,0,0
+185733,3,5,Downtown - Village Mall,,1,28870,13,0,0
+185728,3,5,Downtown - Village Mall,,1,28868,12,0,0
+185759,3,5,Downtown - Village Mall,,1,28869,13,0,0
+185736,3,5,Downtown - Village Mall,,1,28870,12,0,0
+185748,3,5,Downtown - Village Mall,,1,28868,13,0,0
+185738,3,5,Downtown - Village Mall,,1,28869,12,0,0
+185749,3,5,Downtown - Village Mall,,1,28870,13,0,0
+185737,3,5,Downtown - Village Mall,,1,28868,12,0,0
+185750,3,5,Downtown - Village Mall,,1,28869,13,0,0
+185739,3,5,Downtown - Village Mall,,1,28870,12,0,0
+185751,3,5,Downtown - Village Mall,,1,28868,13,0,0
+185741,3,5,Downtown - Village Mall,,1,28869,12,0,0
+185753,3,5,Downtown - Village Mall,,1,28870,13,0,0
+185743,3,5,Downtown - Village Mall,,1,28868,12,0,0
+185754,3,5,Downtown - Village Mall,,1,28869,16,0,0
+185744,3,5,Downtown - Village Mall,,1,28870,14,0,0
+185755,3,5,Downtown - Village Mall,,1,28868,16,0,0
+185745,3,5,Downtown - Village Mall,,1,28869,14,0,0
+185756,3,5,Downtown - Village Mall,,1,28868,16,0,0
+185746,3,5,Downtown - Village Mall,,1,28869,14,0,0
+185757,3,5,Downtown - Village Mall,,1,28868,16,0,0
+185747,3,5,Downtown - Village Mall,,1,28869,15,0,0
+185899,6,5,To Seasame Park,,0,28881,19,0,0
+185898,6,5,To Seasame Park,,0,28881,19,0,0
+185897,6,5,To Seasame Park,,0,28881,19,0,0
+185896,6,5,To Seasame Park,,0,28881,19,0,0
+185895,6,5,To Seasame Park,,0,28881,19,0,0
+185894,6,5,To Seasame Park,,0,28881,19,0,0
+185893,6,5,To Seasame Park,,0,28881,19,0,0
+185892,6,5,To Seasame Park,,0,28881,19,0,0
+185891,6,5,To Seasame Park,,0,28881,19,0,0
+185890,6,5,To Seasame Park,,0,28881,19,0,0
+185889,6,5,To Seasame Park,,0,28881,19,0,0
+185888,6,5,To Seasame Park,,0,28881,19,0,0
+185887,6,5,To Seasame Park,,0,28881,19,0,0
+185886,6,5,To Seasame Park,,0,28881,19,0,0
+185913,6,5,To Village Mall,,1,28881,20,0,0
+185912,6,5,To Village Mall,,1,28881,20,0,0
+185911,6,5,To Village Mall,,1,28881,20,0,0
+185910,6,5,To Village Mall,,1,28881,20,0,0
+185909,6,5,To Village Mall,,1,28881,20,0,0
+185908,6,5,To Village Mall,,1,28881,20,0,0
+185907,6,5,To Village Mall,,1,28881,20,0,0
+185906,6,5,To Village Mall,,1,28881,20,0,0
+185905,6,5,To Village Mall,,1,28881,20,0,0
+185904,6,5,To Village Mall,,1,28881,20,0,0
+185903,6,5,To Village Mall,,1,28881,20,0,0
+185902,6,5,To Village Mall,,1,28881,20,0,0
+185901,6,5,To Village Mall,,1,28881,20,0,0
+185900,6,5,To Village Mall,,1,28881,20,0,0
+185966,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185965,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185964,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185963,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185962,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185961,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185960,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185959,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185958,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185957,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185956,9,5,To Robin Hood Bay Rd,,0,28884,21,0,0
+185978,9,5,To Mun Center,,1,28884,22,0,0
+185977,9,5,To Mun Centre,,1,28884,22,0,0
+185976,9,5,To Mun Centre,,1,28884,22,0,0
+185975,9,5,To Mun Centre,,1,28884,22,0,0
+185974,9,5,To Mun Centre,,1,28884,22,0,0
+185973,9,5,To Mun Centre,,1,28884,22,0,0
+185972,9,5,To Mun Centre,,1,28884,22,0,0
+185971,9,5,To Mun Centre,,1,28884,22,0,0
+185970,9,5,To Mun Centre,,1,28884,22,0,0
+185969,9,5,To Mun Centre,,1,28884,22,0,0
+185968,9,5,To Mun Centre,,1,28884,22,0,0
+185967,9,5,To Mun Centre,,1,28884,22,0,0
+187082,10,5,MUN - Downtown,,0,28940,23,0,0
+187083,10,5,MUN - Downtown,,0,28941,24,0,0
+187084,10,5,MUN - Downtown,,0,28942,24,0,0
+187085,10,5,MUN - Downtown,,0,28940,24,0,0
+187086,10,5,MUN - Downtown,,0,28941,24,0,0
+187087,10,5,MUN - Downtown,,0,28942,24,0,0
+187088,10,5,MUN - Downtown,,0,28940,24,0,0
+187089,10,5,MUN - Downtown,,0,28941,24,0,0
+187090,10,5,MUN - Downtown,,0,28942,24,0,0
+187091,10,5,MUN - Downtown,,0,28940,24,0,0
+187092,10,5,MUN - Downtown,,0,28941,24,0,0
+187093,10,5,MUN - Downtown,,0,28942,24,0,0
+187094,10,5,MUN - Downtown,,0,28940,24,0,0
+187095,10,5,MUN - Downtown,,0,28941,24,0,0
+187096,10,5,MUN - Downtown,,0,28942,24,0,0
+187097,10,5,MUN - Downtown,,0,28940,24,0,0
+187098,10,5,MUN - Downtown,,0,28941,24,0,0
+187099,10,5,MUN - Downtown,,0,28942,24,0,0
+187100,10,5,MUN - Downtown,,0,28940,24,0,0
+187101,10,5,MUN - Downtown,,0,28941,24,0,0
+187102,10,5,MUN - Downtown,,0,28942,24,0,0
+187103,10,5,MUN - Downtown,,0,28940,24,0,0
+187104,10,5,MUN - Downtown,,0,28941,24,0,0
+187105,10,5,MUN - Downtown,,0,28942,24,0,0
+187106,10,5,MUN - Downtown,,0,28940,25,0,0
+187107,10,5,MUN - Downtown,,0,28941,24,0,0
+187108,10,5,MUN - Downtown,,0,28942,24,0,0
+187109,10,5,MUN - Downtown,,0,28941,24,0,0
+187110,10,5,MUN - Downtown,,0,28942,24,0,0
+187111,10,5,MUN - Downtown,,0,28941,24,0,0
+187112,10,5,MUN - Downtown,,0,28942,24,0,0
+187115,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187121,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187119,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187123,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187114,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187122,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187124,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187116,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187120,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187117,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187118,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187125,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187126,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187127,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187128,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187129,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187130,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187131,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187132,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187133,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187134,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187135,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28940,26,0,0
+187136,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187137,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187138,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187139,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187140,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187141,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,26,0,0
+187142,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28941,26,0,0
+187143,10,5,MUN - Avalon Mall - Kelsey Dr,,1,28942,27,0,0
+186146,11,5,To Shea Heights,,0,28898,30,0,0
+186147,11,5,To Shea Heights,,0,28898,30,0,0
+186148,11,5,To Shea Heights,,0,28898,30,0,0
+186149,11,5,To Shea Heights,,0,28898,30,0,0
+186150,11,5,To Shea Heights,,0,28898,30,0,0
+186151,11,5,To Shea Heights,,0,28898,30,0,0
+186152,11,5,To Shea Heights,,0,28898,30,0,0
+186153,11,5,To Shea Heights,,0,28898,30,0,0
+186154,11,5,To Shea Heights,,0,28898,30,0,0
+186155,11,5,To Shea Heights,,0,28898,30,0,0
+186156,11,5,To Shea Heights,,0,28898,30,0,0
+186157,11,5,To Avalon Mall,,1,28898,31,0,0
+186158,11,5,To Avalon Mall,,1,28898,31,0,0
+186159,11,5,To Avalon Mall,,1,28898,31,0,0
+186160,11,5,To Avalon Mall,,1,28898,31,0,0
+186161,11,5,To Avalon Mall,,1,28898,31,0,0
+186162,11,5,To Avalon Mall,,1,28898,31,0,0
+186163,11,5,To Avalon Mall,,1,28898,31,0,0
+186164,11,5,To Avalon Mall,,1,28898,31,0,0
+186165,11,5,To Avalon Mall,,1,28898,31,0,0
+186166,11,5,To Avalon Mall,,1,28898,31,0,0
+186167,11,5,To Avalon Mall,,1,28898,31,0,0
+186168,11,5,To Avalon Mall,,1,28898,31,0,0
+186189,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186191,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186193,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186195,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186197,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186199,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186201,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186203,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186205,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186207,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186209,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28901,32,0,0
+186210,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28900,32,0,0
+186211,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28900,32,0,0
+186212,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28900,32,0,0
+186213,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28900,32,0,0
+186214,12,5,Blackmarsh Rd - Freshwater Rd - Avalon Mall,,0,28900,32,0,0
+186216,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186218,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186220,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186222,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186224,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186226,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186228,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186230,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186232,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186234,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186236,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28901,33,0,0
+186238,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28900,33,0,0
+186239,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28900,33,0,0
+186240,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28900,33,0,0
+186241,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28900,33,0,0
+186242,12,5,Freshwater Rd - Blackmarsh Rd - Village Mall,,1,28900,33,0,0
+186297,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186298,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186299,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186300,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186301,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186302,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186303,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186304,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186305,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186306,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186307,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186308,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186309,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186310,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186311,14,5,Torbay Rd - Airport,,0,28904,34,0,0
+186313,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186314,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186315,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186316,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186317,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186318,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186319,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186320,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186321,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186322,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186323,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186324,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186325,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186326,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186327,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186312,14,5,Torbay Rd - MUN Center,,1,28904,35,0,0
+186364,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186366,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186368,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186370,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186372,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186374,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186376,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186378,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186380,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186382,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186384,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186386,15,5,MUN - Forest Rd,,0,28907,36,0,0
+186387,15,5,MUN - Forest Rd,,0,28908,36,0,0
+186388,15,5,MUN - Forest Rd,,0,28908,36,0,0
+186389,15,5,MUN - Forest Rd,,0,28908,36,0,0
+186390,15,5,MUN - Forest Rd,,0,28908,36,0,0
+186391,15,5,MUN - Forest Rd,,0,28908,36,0,0
+186393,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186395,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186397,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186399,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186401,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186403,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186405,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186407,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186409,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186411,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186413,15,5,MUN - Avalon Mall,,1,28907,37,0,0
+186415,15,5,MUN - Avalon Mall,,1,28907,38,0,0
+186416,15,5,MUN - Avalon Mall,,1,28908,37,0,0
+186417,15,5,MUN - Avalon Mall,,1,28908,37,0,0
+186418,15,5,MUN - Avalon Mall,,1,28908,37,0,0
+186419,15,5,MUN - Avalon Mall,,1,28908,37,0,0
+186420,15,5,MUN - Avalon Mall,,1,28908,37,0,0
+186475,16,5,Kenmount Terrace,,0,28911,39,0,0
+186476,16,5,Kenmount Terrace,,0,28911,39,0,0
+186477,16,5,Kenmount Terrace,,0,28911,39,0,0
+186478,16,5,Kenmount Terrace,,0,28911,39,0,0
+186479,16,5,Kenmount Terrace,,0,28911,39,0,0
+186480,16,5,Kenmount Terrace,,0,28911,39,0,0
+186481,16,5,Kenmount Terrace,,0,28911,39,0,0
+186482,16,5,Kenmount Terrace,,0,28911,39,0,0
+186483,16,5,Kenmount Terrace,,0,28911,39,0,0
+186484,16,5,Kenmount Terrace,,0,28911,39,0,0
+186485,16,5,Kenmount Terrace,,0,28911,39,0,0
+186486,16,5,Kenmount Terrace,,0,28911,39,0,0
+186487,16,5,Kenmount Terrace,,0,28911,39,0,0
+186488,16,5,Kenmount Terrace,,0,28911,39,0,0
+186489,16,5,Kenmount Terrace,,0,28911,39,0,0
+186490,16,5,Kenmount Terrace,,0,28911,39,0,0
+186491,16,5,MUN Center,,1,28911,40,0,0
+186492,16,5,MUN Center,,1,28911,40,0,0
+186493,16,5,MUN Center,,1,28911,40,0,0
+186494,16,5,MUN Center,,1,28911,40,0,0
+186495,16,5,MUN Center,,1,28911,40,0,0
+186496,16,5,MUN Center,,1,28911,40,0,0
+186497,16,5,MUN Center,,1,28911,40,0,0
+186498,16,5,MUN Center,,1,28911,40,0,0
+186499,16,5,MUN Center,,1,28911,40,0,0
+186500,16,5,MUN Center,,1,28911,40,0,0
+186501,16,5,MUN Center,,1,28911,40,0,0
+186502,16,5,MUN Center,,1,28911,40,0,0
+186503,16,5,MUN Center,,1,28911,40,0,0
+186504,16,5,MUN Center,,1,28911,40,0,0
+186505,16,5,MUN Center,,1,28911,40,0,0
+186506,16,5,MUN Center,,1,28911,40,0,0
+186555,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186556,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186557,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186558,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186559,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186560,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186561,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186562,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186563,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186564,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186565,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186566,18,5,Kilbride - Goulds,,0,28914,41,0,0
+186567,18,5,Kilbride - Goulds,,0,28915,41,0,0
+186568,18,5,Kilbride - Goulds,,0,28915,41,0,0
+186569,18,5,Kilbride - Goulds,,0,28915,41,0,0
+186570,18,5,Kilbride - Goulds,,0,28915,41,0,0
+186571,18,5,Kilbride - Goulds,,0,28915,41,0,0
+186573,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186574,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186575,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186576,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186577,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186578,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186579,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186580,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186581,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186582,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186583,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186584,18,5,Kilbride - Village Mall,,1,28914,42,0,0
+186585,18,5,Kilbride - Village Mall,,1,28915,42,0,0
+186586,18,5,Kilbride - Village Mall,,1,28915,42,0,0
+186587,18,5,Kilbride - Village Mall,,1,28915,42,0,0
+186588,18,5,Kilbride - Village Mall,,1,28915,42,0,0
+186589,18,5,Kilbride - Village Mall,,1,28915,42,0,0
+186649,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186651,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186653,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186655,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186657,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186659,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186661,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186663,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186665,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186667,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186669,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28919,44,0,0
+186670,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28918,44,0,0
+186671,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28918,44,0,0
+186672,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28918,44,0,0
+186673,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28918,44,0,0
+186674,19,5,Cowan Hgts - Crosbie Rd - Avalon Mall,,0,28918,44,0,0
+186677,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186679,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186681,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186683,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186685,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186687,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186689,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186691,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186693,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186695,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186697,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28919,45,0,0
+186699,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28918,45,0,0
+186700,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28918,45,0,0
+186701,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28918,45,0,0
+186702,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28918,45,0,0
+186703,19,5,Crosbie Rd - Cowan Hgts - Village Mall,,1,28918,45,0,0
+186786,20,5,To Galway,,0,28881,46,0,0
+186785,20,5,To Galway,,0,28881,46,0,0
+186784,20,5,To Galway,,0,28881,46,0,0
+186783,20,5,To Galway,,0,28881,46,0,0
+186782,20,5,To Galway,,0,28881,46,0,0
+186781,20,5,To Galway,,0,28881,46,0,0
+186780,20,5,To Galway,,0,28881,46,0,0
+186779,20,5,To Galway,,0,28881,46,0,0
+186778,20,5,To Galway,,0,28881,46,0,0
+186777,20,5,To Galway,,0,28881,46,0,0
+186776,20,5,To Galway,,0,28881,46,0,0
+186775,20,5,To Galway,,0,28881,46,0,0
+186774,20,5,To Galway,,0,28881,46,0,0
+186773,20,5,To Galway,,0,28881,46,0,0
+186772,20,5,To Galway,,0,28881,46,0,0
+186771,20,5,To Galway,,0,28881,46,0,0
+186802,20,5,To Village Mall,,1,28881,47,0,0
+186801,20,5,To Village Mall,,1,28881,47,0,0
+186800,20,5,To Village Mall,,1,28881,47,0,0
+186799,20,5,To Village Mall,,1,28881,47,0,0
+186798,20,5,To Village Mall,,1,28881,47,0,0
+186797,20,5,To Village Mall,,1,28881,47,0,0
+186796,20,5,To Village Mall,,1,28881,47,0,0
+186795,20,5,To Village Mall,,1,28881,47,0,0
+186794,20,5,To Village Mall,,1,28881,47,0,0
+186793,20,5,To Village Mall,,1,28881,47,0,0
+186792,20,5,To Village Mall,,1,28881,47,0,0
+186791,20,5,To Village Mall,,1,28881,47,0,0
+186790,20,5,To Village Mall,,1,28881,47,0,0
+186789,20,5,To Village Mall,,1,28881,47,0,0
+186788,20,5,To Village Mall,,1,28881,47,0,0
+186787,20,5,To Village Mall,,1,28881,47,0,0
+186859,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186860,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186861,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186862,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186863,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186864,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186865,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186866,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186867,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186868,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186869,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186870,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28923,48,0,0
+186871,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28924,49,0,0
+186872,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28924,49,0,0
+186873,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28924,49,0,0
+186874,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28924,49,0,0
+186875,21,5,Mount Pearl Sq - Commonwealth Ave,,0,28924,49,0,0
+186876,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186877,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186878,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186879,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186880,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186881,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186882,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186883,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186884,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186885,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186886,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186887,21,5,Mount Pearl Sq - Village Mall,,1,28923,50,0,0
+186888,21,5,Mount Pearl Sq - Village Mall,,1,28924,51,0,0
+186889,21,5,Mount Pearl Sq - Village Mall,,1,28924,51,0,0
+186890,21,5,Mount Pearl Sq - Village Mall,,1,28924,51,0,0
+186891,21,5,Mount Pearl Sq - Village Mall,,1,28924,51,0,0
+186892,21,5,Mount Pearl Sq - Village Mall,,1,28924,51,0,0
+186938,22,5,Mount Pearl Sq - Donovans,,0,28927,53,0,0
+186939,22,5,Mount Pearl Sq - Donovans,,0,28927,53,0,0
+186940,22,5,Mount Pearl Sq - Donovans,,0,28927,53,0,0
+186941,22,5,Mount Pearl Sq - Donovans,,0,28924,54,0,0
+186942,22,5,Mount Pearl Sq - Donovans,,0,28924,54,0,0
+186943,22,5,Mount Pearl Sq - Donovans,,0,28924,54,0,0
+186944,22,5,Mount Pearl Sq - Village Mall,,1,28927,55,0,0
+186945,22,5,Mount Pearl Sq - Village Mall,,1,28927,55,0,0
+186946,22,5,Mount Pearl Sq - Village Mall,,1,28927,55,0,0
+186947,22,5,Mount Pearl Sq - Village Mall,,1,28924,55,0,0
+186948,22,5,Mount Pearl Sq - Village Mall,,1,28924,55,0,0
+186949,22,5,Mount Pearl Sq - Village Mall,,1,28924,55,0,0
+187161,23,5,Stavanger Dr,,0,28943,56,0,0
+187160,23,5,Stavanger Dr,,0,28943,56,0,0
+187159,23,5,Stavanger Dr,,0,28943,56,0,0
+187158,23,5,Stavanger Dr,,0,28943,56,0,0
+187157,23,5,Stavanger Dr,,0,28943,56,0,0
+187166,23,5,Avalon Mall,,1,28943,57,0,0
+187165,23,5,Avalon Mall,,1,28943,57,0,0
+187164,23,5,Avalon Mall,,1,28943,57,0,0
+187163,23,5,Avalon Mall,,1,28943,57,0,0
+187162,23,5,Avalon Mall,,1,28943,57,0,0
+149506,30,1,Avalon Mall,,0,26896,5,0,0
+149507,30,1,Avalon Mall,,0,26896,5,0,0
+149508,30,1,Avalon Mall,,0,26896,5,0,0
+149509,30,1,Avalon Mall,,0,26896,5,0,0
+149510,30,1,Paradise,,1,26896,4,0,0
+149511,30,1,Paradise,,1,26896,4,0,0
+149512,30,1,Paradise,,1,26896,4,0,0
+149513,30,1,Paradise,,1,26896,4,0,0
+147984,30,5,Avalon Mall,,0,26798,1,0,0
+147985,30,5,Avalon Mall,,0,26798,1,0,0
+147986,30,5,Avalon Mall,,0,26799,2,0,0
+147987,30,5,Avalon Mall,,0,26799,2,0,0
+147988,30,5,Paradise,,1,26798,3,0,0
+147989,30,5,Paradise,,1,26799,4,0,0
+147990,30,5,Paradise,,1,26799,4,0,0
+147991,30,5,Paradise,,1,26799,4,0,0

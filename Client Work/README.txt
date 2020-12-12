@@ -1,0 +1,1 @@
+To preview the result of my Client work, download the 'trips-inbound-new.csv' & 'gtfs-viz.R' files, run the "gtfs-viz.R" file in RStudio. A map showing the colorful bus routes and stops of Metrobus transit for St.John's, Newfoundland , will be visible.
